@@ -1,0 +1,288 @@
+/* GERAL*/
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SCROLL */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #185ADB;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid #185ADB;  /* creates padding around scroll thumb */
+}
+
+/* CABEÇALHO */
+body > header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #FEFEFE;
+    z-index: 10000;
+}
+body > header > nav{
+    padding: 1.2rem 7rem 1.2rem 5rem;
+    background-color: #FEFEFE;
+    color: #121212;
+}
+
+body > header > nav > ul{
+    list-style: none;
+    display: flex;
+    margin-left: 60%;
+    position: relative;
+    margin-top: -1.2rem;
+}
+
+body > header > nav > ul > li{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    color: #121212;
+    cursor: pointer;
+}
+
+body > header > nav > ul > li > a{
+    text-decoration: none;
+    color: #121212;
+}
+
+body > header > nav > ul > li > a.active{
+    color: #185ADB;
+}
+
+body > header > nav > ul > li > a:hover{
+    color: #185ADB;
+    transition-delay: .2s;
+}
+
+/* MENU PRINCIPAL */
+body > main{
+    padding: 1.2rem 7rem 1.2rem 5rem;
+}
+
+body > main > aside{
+    margin-top: 10%;
+    position: relative;
+    display: inline-block;
+}
+
+body > main > aside > ul{
+    list-style: none;
+}
+
+body > main > aside > ul > li{
+    font-size: 1.4rem; 
+}
+
+body > main > aside > ul > li > a{
+    color: #185ADB;
+    text-decoration: none;
+}
+
+body > main > aside > ul > li > a > i{
+    margin-bottom: .9rem;
+}
+
+body > main > div.columns{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+}
+
+body > main > div.info{
+    display: inline-block;
+    width: 48%;
+    margin-left: 5%;
+    margin-top: -10rem;
+    margin-bottom: 30rem;
+}
+
+body > main > div.info > h1{
+    font-size: 3rem;
+}
+
+body > main > div.info > h1,
+body > main > div.info > h4{
+    line-height: 3rem;
+}
+
+body > main > div.image {
+    display: inline-flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+body > main > div.image > img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 3rem;
+    margin-left: 140px;
+    margin-top: 120px;
+}
+
+body > main > a{
+    position: absolute;
+    display: block;
+    margin-top: -400px;
+    margin-left: 75px;
+    background-color: #185ADB;
+    border-color: transparent;
+    border-radius: .8rem;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    color: #FEFEFE;
+    text-decoration: none;
+}
+
+body > main > a:hover{
+    transition-delay: .2s;
+    padding: 1rem 1.2rem;
+}
+
+/* SEÇÃO SOBRE MIM */
+body > main > section.about{
+    height: 500px;
+    margin-top: 0; 
+}
+
+body > main > section.about > h2{
+    text-align: center;
+}
+
+body > main > section.about > p{
+    text-align: center;
+}
+
+body > main > section.about > div.grid-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    padding: 0 1rem 0 10rem;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-left{
+    width: 50%;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-left > img{
+    width: 14rem;
+    height: 14rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right{
+    width: 110%;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01,
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02,
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03{
+    margin-top: 10%;
+    margin-right: 9%;
+    display: inline-block;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01 > span,
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02 > span,
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03 > span{
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01 > p,
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02 > p,
+body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03 > p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > a{
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: #185ADB;
+    border-color: transparent;
+    border-radius: .8rem;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > a{
+    text-decoration: none;
+    color: #FEFEFE;
+    width: 28%;
+}
+
+body > main > section.about > div.grid-about > div.grid-about-right > a:hover{
+    text-decoration: none;
+    color: #185ADB;
+    background-color: transparent;
+    border: 1px solid #185ADB;
+    transition-delay: .2s;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #185ADB;
+    color: #FEFEFE;
+    height: 200px;
+}
+
+footer > div.grid-rodape{
+    display: grid;
+    grid-template-columns: .8fr .8fr .8fr;
+    padding: 3rem 8rem;
+}
+
+footer > div.grid-rodape > div.grid-rodape-center{
+    margin-left: 15%;
+}
+
+footer > div.grid-rodape > div.grid-rodape-left{
+    line-height: 2rem;
+}
+
+footer > div.grid-rodape > div.grid-rodape-right{
+    margin-left: 25%;
+}
+
+footer > div.grid-rodape > div.grid-rodape-center > ul,
+footer > div.grid-rodape > div.grid-rodape-right > ul{
+    list-style: none;
+    display: flex;
+}
+
+footer > div.grid-rodape > div.grid-rodape-center > ul > li,
+footer > div.grid-rodape > div.grid-rodape-right > ul > li{
+    margin-right: 1.6rem;
+}
+
+footer > div.grid-rodape > div.grid-rodape-center > ul > li > a,
+footer > div.grid-rodape > div.grid-rodape-right > ul > li > a{
+    text-decoration: none;
+    color: #FEFEFE;
+}
+
+footer > p{
+    text-align: center;
+    font-size: .8rem;
+}
