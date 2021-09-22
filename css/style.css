@@ -240,6 +240,201 @@ body > main > section.about > div.grid-about > div.grid-about-right > a:hover{
     transition-delay: .2s;
 }
 
+/* SEÇÃO SKILLS */
+body > main > section.skills{
+    height: 500px;
+    margin-top: 0; 
+}
+
+body > main > section.skills > h2{
+    text-align: center;
+}
+
+body > main > section.skills > p{
+    text-align: center;
+}
+
+body > main > section.skills > div.front-end{
+    display: inline-block;
+    width: 40%;
+    margin-top: 3%;
+    padding: 1rem 1rem 1rem 8rem;
+}
+
+body > main > section.skills > div.front-end > i{
+    color: #185ADB;
+    font-size: 1.6rem;
+}
+
+body > main > section.skills > div.front-end > h3{
+    display: inline-block;
+    margin-left: 8.5%;
+}
+
+body > main > section.skills > div.front-end > p{
+    font-size: .9rem;
+    text-align: initial;
+    margin-top: 2%;
+}
+
+body > main > section.skills > div.front-end > button{
+    background-color: transparent;
+    border-color: transparent;
+    display: inline-block;
+    float: right;
+    margin-top: -17%;
+    cursor: pointer;
+}
+
+body > main > section.skills > div.front-end > button > i{
+    font-size: 1.1rem;
+    color: #185ADB;
+    opacity: .7;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills{
+    margin-top: 7%;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-01{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 90%;
+    padding: .4rem 0;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-01 > p{
+    margin-left: 90%;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-02{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 80%;
+    padding: .9rem 0 .3rem 0;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-02 > p{
+    margin-left: 113%;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-03{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 75%;
+    padding: .9rem 0 .3rem 0;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-03 > p{
+    margin-left: 126%;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-04{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 70%;
+    padding: .9rem 0 .3rem 0;
+}
+
+body > main > section.skills > div.front-end > div.front-end-skills > div.skill-04 > p{
+    margin-left: 142%;
+}
+
+body > main > section.skills > div.back-end{
+    display: inline-block;
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 12%;
+    padding: 1rem 1rem 1rem 8rem;
+}
+
+body > main > section.skills > div.back-end > i{
+    color: #185ADB;
+    font-size: 1.6rem;
+}
+
+body > main > section.skills > div.back-end > h3{
+    display: inline-block;
+    margin-left: 8.5%;
+}
+
+body > main > section.skills > div.back-end > p{
+    font-size: .9rem;
+    text-align: initial;
+    margin-top: 2%;
+}
+
+body > main > section.skills > div.back-end > button{
+    background-color: transparent;
+    border-color: transparent;
+    display: inline-block;
+    float: right;
+    margin-top: -17%;
+    cursor: pointer;
+}
+
+body > main > section.skills > div.back-end > button > i{
+    font-size: 1.1rem;
+    color: #185ADB;
+    opacity: .7;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills{
+    margin-top: 7%;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-01{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 79%;
+    padding: .4rem 0;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-01 > p{
+    margin-left: 115%;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-02{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 82%;
+    padding: .9rem 0 .3rem 0;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-02 > p{
+    margin-left: 107%;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-03{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 72%;
+    padding: .9rem 0 .3rem 0;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-03 > p{
+    margin-left: 135%;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-04{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #185ADB;
+    width: 66%;
+    padding: .9rem 0 .3rem 0;
+}
+
+body > main > section.skills > div.back-end > div.back-end-skills > div.skill-04 > p{
+    margin-left: 157%;
+}
+
 /* RODAPÉ */
 footer{
     background-color: #185ADB;
