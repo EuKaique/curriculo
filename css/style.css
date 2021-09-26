@@ -280,7 +280,7 @@ body > main > section.skills > div.front-end > p{
 body > main > section.skills > div.front-end > button{
     background-color: transparent;
     border-color: transparent;
-    display: inline-block;
+    display: inline;
     float: right;
     margin-top: -17%;
     cursor: pointer;
@@ -371,7 +371,7 @@ body > main > section.skills > div.back-end > p{
 body > main > section.skills > div.back-end > button{
     background-color: transparent;
     border-color: transparent;
-    display: inline-block;
+    display: inline;
     float: right;
     margin-top: -17%;
     cursor: pointer;
@@ -433,6 +433,200 @@ body > main > section.skills > div.back-end > div.back-end-skills > div.skill-04
 
 body > main > section.skills > div.back-end > div.back-end-skills > div.skill-04 > p{
     margin-left: 157%;
+}
+
+/* SEÇÃO EXPERIENCE */
+body > main > section.experience{
+    height: 500px;
+    margin-top: 0;
+}
+
+body > main > section.experience > h2,
+body > main > section.experience > p{
+    text-align: center;
+}
+
+body > main > section.experience > button{
+    display: inline;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+body > main > section.experience > button:hover{
+    color: #185ADB;
+}
+
+body > main > section.experience > button.active{
+    color: #185ADB;
+}
+
+body > main > section.experience > button.education{
+    margin-left: 30%;
+}
+
+body > main > section.experience > button.work{
+    margin-left: 20%;
+}
+
+body > main > section.experience > button > i{
+    margin-left: 1%;
+}
+
+body > main > section.experience > div.block-education{
+    margin-top: 3%;
+}
+
+body > main > section.experience > div.block-education > div.block-01{
+    height: 100px;
+    width: 20%;
+    margin-left: 30%;
+    padding: 0px 10px;
+    line-height: 1.6rem;
+    border-right: 2px solid #185ADB;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+body > main > section.experience > div.block-education > div.block-01 > p,
+body > main > section.experience > div.block-education > div.block-01 > span{
+    font-size: 14px;
+}
+
+body > main > section.experience > div.block-education > div.block-01 > span{
+    color: #AAA;
+}
+
+body > main > section.experience > div.block-education > div.block-01 > span > i{
+    margin-right: 1%;
+}
+
+body > main > section.experience > div.block-education > div.block-02{
+    height: 100px;
+    width: 23%;
+    margin-left: 50%;
+    padding: 5px 10px 0 30px;
+    line-height: 1.6rem;
+    border-left: 2px solid #185ADB;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+body > main > section.experience > div.block-education > div.block-02 > p,
+body > main > section.experience > div.block-education > div.block-02 > span{
+    font-size: 14px;
+}
+
+body > main > section.experience > div.block-education > div.block-02 > span{
+    color: #AAA;
+}
+
+body > main > section.experience > div.block-education > div.block-02 > span > i{
+    margin-right: 1%;
+}
+
+body > main > section.experience > div.block-education > div.block-03{
+    height: 100px;
+    width: 20%;
+    margin-left: 30%;
+    padding: 0px 10px;
+    line-height: 1.6rem;
+    border-right: 2px solid #185ADB;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+body > main > section.experience > div.block-education > div.block-03 > p,
+body > main > section.experience > div.block-education > div.block-03 > span{
+    font-size: 14px;
+}
+
+body > main > section.experience > div.block-education > div.block-03 > span{
+    color: #AAA;
+}
+
+body > main > section.experience > div.block-education > div.block-03 > span > i{
+    margin-right: 1%;
+}
+
+/*work*/
+
+body > main > section.experience > div.block-work{
+    margin-top: 3%;
+}
+
+body > main > section.experience > div.block-work > div.block-01{
+    height: 100px;
+    width: 20%;
+    margin-left: 30%;
+    padding: 0px 10px;
+    line-height: 1.6rem;
+    border-right: 2px solid #185ADB;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+body > main > section.experience > div.block-work > div.block-01 > p,
+body > main > section.experience > div.block-work > div.block-01 > span{
+    font-size: 14px;
+}
+
+body > main > section.experience > div.block-work > div.block-01 > span{
+    color: #AAA;
+}
+
+body > main > section.experience > div.block-work > div.block-01 > span > i{
+    margin-right: 1%;
+}
+
+body > main > section.experience > div.block-work > div.block-02{
+    height: 100px;
+    width: 23%;
+    margin-left: 50%;
+    padding: 5px 10px 0 30px;
+    line-height: 1.6rem;
+    border-left: 2px solid #185ADB;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+body > main > section.experience > div.block-work > div.block-02 > p,
+body > main > section.experience > div.block-work > div.block-02 > span{
+    font-size: 14px;
+}
+
+body > main > section.experience > div.block-work > div.block-02 > span{
+    color: #AAA;
+}
+
+body > main > section.experience > div.block-work > div.block-02 > span > i{
+    margin-right: 1%;
+}
+
+body > main > section.experience > div.block-work > div.block-03{
+    height: 100px;
+    width: 20%;
+    margin-left: 30%;
+    padding: 0px 10px;
+    line-height: 1.6rem;
+    border-right: 2px solid #185ADB;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+body > main > section.experience > div.block-work > div.block-03 > p,
+body > main > section.experience > div.block-work > div.block-03 > span{
+    font-size: 14px;
+}
+
+body > main > section.experience > div.block-work > div.block-03 > span{
+    color: #AAA;
+}
+
+body > main > section.experience > div.block-work > div.block-03 > span > i{
+    margin-right: 1%;
 }
 
 /* RODAPÉ */

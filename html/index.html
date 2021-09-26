@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
     <title>Currículo Web</title>
 </head>
-<body id="fundo">
+<body id="fundo" onload="EducationSet()">
     <header>
         <nav id=fundo-header>
             <h4>Kaique</h4>
@@ -126,6 +126,46 @@
                 </div>    
             </div>     
         </section>
+        <section class="experience">
+            <h2>Experiência</h2>
+            <p>Minha jornada pessoal</p>
+            <button class="education active" id="education" onclick="MostraEducation()"><i class="fas fa-book-reader"></i>Educação</button>
+            <button class="work" id="experience" onclick="MostraWork()"><i class="fas fa-briefcase"></i>Trabalhos</button>
+            <div class="block-education" id="block-education">
+                <div class="block-01">
+                    <h4>Ensino Médio</h4>
+                    <p>E.E. José Lins do Rego</p>
+                    <span><i class="far fa-calendar-alt"></i>2011-2013</span>
+                </div>
+                <div class="block-02">
+                    <h4>Ensino Superior</h4>
+                    <p>Universidade paulista - UNIP</p>
+                    <span><i class="far fa-calendar-alt"></i>2014-2017</span>
+                </div>
+                <div class="block-03">
+                    <h4>Cursos online (Desenvolvimento web)</h4>
+                    <p>Udemy e Youtube</p>
+                    <span><i class="far fa-calendar-alt"></i>2019-2021</span>
+                </div>
+            </div>
+            <div class="block-work" id="block-work">
+                <div class="block-01">
+                    <h4>Auxiliar administrativo</h4>
+                    <p>CIM Gestão e Informação ltda.</p>
+                    <span><i class="far fa-calendar-alt"></i>Jul/2014-Dez/2014</span>
+                </div>
+                <div class="block-02">
+                    <h4>Analista de sistemas jr</h4>
+                    <p>SSI Soluções em Sistemas da Informação ltda.</p>
+                    <span><i class="far fa-calendar-alt"></i>Abr/2018-Jun/2018</span>
+                </div>
+                <div class="block-03">
+                    <h4>Analista programador jr</h4>
+                    <p>Tesis Tecnologia e Qualidade em Engenharia ltda.</p>
+                    <span><i class="far fa-calendar-alt"></i>Atualmente</span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="grid-rodape">
@@ -152,5 +192,6 @@
         <p>&reg; Kaique Oliveira Santos - 2021</p>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 </html>

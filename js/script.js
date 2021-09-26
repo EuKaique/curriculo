@@ -1,3 +1,5 @@
+/* ESCURECER O SITE */
+
 var fundo = document.getElementById('fundo');
 var fundoHeader = document.getElementById('fundo-header');
 var aA = document.getElementById('aA');
@@ -25,3 +27,34 @@ var lampada = document.getElementById('lampada').addEventListener('click', () =>
 
 });
 
+/* MOSTRAR E OCULTAR SEÇÃO - EDUCATION E WORK */
+
+var blockEducation = document.getElementById('block-education');
+var blockWork = document.getElementById('block-work');
+
+function EducationSet(){
+    blockEducation.style.display = "block";
+    blockWork.style.display = "none";
+}
+
+function MostraEducation(){
+    blockEducation.style.display = "block";
+    blockWork.style.display = "none";
+}
+
+function MostraWork(){
+    blockEducation.style.display = "none";
+    blockWork.style.display = "block";
+}
+
+$('document').ready(function () {
+    $('button').click(function () {      //<----click the buttons
+        $('button').removeClass('active'); //<-----remove the class from the button
+        $(this).addClass('active'); //<---add the class to currently clicked button
+        /*
+        var $div = $('#' + $(this).data('href'));
+        $('.demo').not($div).hide();
+        $div.slideToggle();
+        */
+     });
+  });
