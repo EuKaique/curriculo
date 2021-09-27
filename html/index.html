@@ -17,36 +17,38 @@
         <nav id=fundo-header>
             <h4>Kaique</h4>
             <ul>
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a id="aA" href="#">Sobre</a></li>
-                <li><a id="aB" href="#">Habilidades</a></li>
-                <li><a id="aC" href="#">Serviços</a></li>
-                <li><a id="aD" href="#">Portfolio</a></li>
-                <li><a id="aE" href="#">Contato</a></li>
+                <li id="info-menu"><a class="nav-item active" href="#">Inicio</a></li>
+                <li id="about-menu"><a class="nav-item" id="aA" href="#">Sobre</a></li>
+                <li id=""><a class="nav-item" id="aB" href="#">Habilidades</a></li>
+                <li id=""><a class="nav-item" id="aC" href="#">Serviços</a></li>
+                <li id=""><a class="nav-item" id="aD" href="#">Portfolio</a></li>
+                <li id=""><a class="nav-item" id="aE" href="#">Contato</a></li>
                 <li id="lampada"><i id="aF" class="fas fa-lightbulb"></i></li>
             </ul>
         </nav>
     </header>
     <main>
-        <aside>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/EuKaique" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/kaique_o_s/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </aside>
-        <div class="info">
-            <h1>Olá, Eu sou o Kaique</h1>
-            <h4>Analista programador</h4>
-            <p>Experiência com desenvolvimento web, criação de estruturas html, estilos css e interação javascript. Php como back-end e banco de dados MySQL</p>
-            
+        <div id="info">
+            <aside>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/EuKaique" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/kaique_o_s/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </aside>
+            <div class="info">
+                <h1>Olá, Eu sou o Kaique</h1>
+                <h4>Analista programador</h4>
+                <p>Experiência com desenvolvimento web, criação de estruturas html, estilos css e interação javascript. Php como back-end e banco de dados MySQL</p>
+                
+            </div>
+            <div class="image">
+                <img src="../img/kaique.jpg" alt="Currículo Web Kaique">
+            </div>
+            <a href="https://wa.me/5511952422368">Fale comigo <i class="far fa-paper-plane"></i></a>
         </div>
-        <div class="image">
-            <img src="../img/kaique.jpg" alt="Currículo Web Kaique">
-        </div>
-        <a href="https://wa.me/5511952422368">Fale comigo <i class="far fa-paper-plane"></i></a>
-        <section class="about">
+        <section id="about" class="about">
             <h2>Sobre mim</h2>
             <p>Introdução</p>
             <div class="grid-about">
@@ -74,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Habilidades</h2>
             <p>Meu nível técnico</p>
             <div class="front-end">
@@ -126,7 +128,7 @@
                 </div>    
             </div>     
         </section>
-        <section class="experience">
+        <section id="experience" class="experience">
             <h2>Experiência</h2>
             <p>Minha jornada pessoal</p>
             <button class="education active" id="education" onclick="MostraEducation()"><i class="fas fa-book-reader"></i>Educação</button>
@@ -165,6 +167,32 @@
                     <span><i class="far fa-calendar-alt"></i>Atualmente</span>
                 </div>
             </div>
+        </section>
+        <section id="services" class="services">
+            <h2>Serviços</h2>
+            <p>O que você precisa?</p>
+            <div class="services-flex">
+                <div class="service">
+                    <i class="far fa-window-restore"></i>
+                    <h4>Criação de sites</h4>
+                    <a href="#" id="link1">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service">
+                    <i class="fas fa-server"></i>
+                    <h4>Sistemas CRUD</h4>
+                    <a href="#" id="link2">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service">
+                    <i class="fab fa-wpforms"></i>
+                    <h4>Formulários</h4>
+                    <a href="#" id="link3">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="portfolios" class="portfolios">
+            <h2>Portfólios</h2>
+            <p>Meus trabalhos</p>
+
         </section>
     </main>
     <footer>

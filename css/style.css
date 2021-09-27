@@ -70,35 +70,35 @@ body > main{
     padding: 1.2rem 7rem 1.2rem 5rem;
 }
 
-body > main > aside{
+body > main > div > aside{
     margin-top: 10%;
     position: relative;
     display: inline-block;
 }
 
-body > main > aside > ul{
+body > main > div > aside > ul{
     list-style: none;
 }
 
-body > main > aside > ul > li{
+body > main > div > aside > ul > li{
     font-size: 1.4rem; 
 }
 
-body > main > aside > ul > li > a{
+body > main > div > aside > ul > li > a{
     color: #185ADB;
     text-decoration: none;
 }
 
-body > main > aside > ul > li > a > i{
+body > main > div > aside > ul > li > a > i{
     margin-bottom: .9rem;
 }
 
-body > main > div.columns{
+body > main > div > div.columns{
     display: grid;
     grid-template-columns: 1fr .5fr;
 }
 
-body > main > div.info{
+body > main > div > div.info{
     display: inline-block;
     width: 48%;
     margin-left: 5%;
@@ -106,23 +106,23 @@ body > main > div.info{
     margin-bottom: 30rem;
 }
 
-body > main > div.info > h1{
+body > main > div > div.info > h1{
     font-size: 3rem;
 }
 
-body > main > div.info > h1,
-body > main > div.info > h4{
+body > main > div > div.info > h1,
+body > main > div > div.info > h4{
     line-height: 3rem;
 }
 
-body > main > div.image {
+body > main > div > div.image {
     display: inline-flex;
     width: 40%;
     justify-content: center;
     align-items: center;
 }
 
-body > main > div.image > img{
+body > main > div > div.image > img{
     width: 14rem;
     height: 14rem;
     border-radius: 3rem;
@@ -130,7 +130,7 @@ body > main > div.image > img{
     margin-top: 120px;
 }
 
-body > main > a{
+body > main > div > a{
     position: absolute;
     display: block;
     margin-top: -400px;
@@ -144,7 +144,7 @@ body > main > a{
     text-decoration: none;
 }
 
-body > main > a:hover{
+body > main > div > a:hover{
     transition-delay: .2s;
     padding: 1rem 1.2rem;
 }
@@ -627,6 +627,74 @@ body > main > section.experience > div.block-work > div.block-03 > span{
 
 body > main > section.experience > div.block-work > div.block-03 > span > i{
     margin-right: 1%;
+}
+
+body > main > section.services{
+    height: 500px;
+    margin-top: 0;
+}
+
+body > main > section.services > h2{
+    margin-top: 5%;
+}
+
+body > main > section.services > h2,
+body > main > section.services > p{
+    text-align: center;
+}
+
+body > main > section.services > div.services-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+body > main > section.services > div.services-flex > div.service{
+    margin-right: 8%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 6rem 3rem 10rem 3rem;
+    border-radius: 1rem;
+}
+
+body > main > section.services > div.services-flex > div.service:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+body > main > section.services > div.services-flex > div.service:nth-child(1){
+    margin-left: 13%;
+}
+
+body > main > section.services > div.services-flex > div.service:nth-child(3){
+    margin-left: 0%;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+body > main > section.services > div.services-flex > div.service > i{
+    font-size: 1.3rem;
+    color: #185ADB;
+    display: flex;
+    justify-content: center;
+}
+
+body > main > section.services > div.services-flex > div.service > h4{
+    margin-top: 5%;
+}
+
+body > main > section.services > div.services-flex > div.service > a{
+    margin-top: 50%;
+    font-size: .9rem;
+    display: block;
+    text-decoration: none;
+    color: #121212;
+}
+
+body > main > section.services > div.services-flex > div.service > a:hover{
+    color: #185ADB;
+}
+
+body > main > section.services > div.services-flex > div.service > a > i:hover{
+    margin-left: 1%;
 }
 
 /* RODAPÉ */
