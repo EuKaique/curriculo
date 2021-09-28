@@ -53,8 +53,9 @@ function MostraWork(){
     blockWork.style.display = "block";
 }
 
+/* UTILIZAÇÃO DO JQUERY */    
+$(document).ready(function(){
     // SCROLL PARA AS SEÇÕES
-
     let navBtn = $('.nav-item');
 
     let infoSection = $('#info-menu');
@@ -86,3 +87,14 @@ function MostraWork(){
             scrollTop: $(scrollTo).offset().top - 70
         }, 1500);
     });
+
+    /* CARROSEL DOS PORTFÓLIOS */
+    $('.portfolios-slider').owlCarousel({
+        items: 1,
+        section: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        loop: true
+    })
+});
