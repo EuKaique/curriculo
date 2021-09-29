@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 /* SCROLL */
@@ -788,10 +789,114 @@ body > main > section.portfolios > div.portfolios-container > div.block-right > 
 
 body > main > section.portfolios > div.portfolios-container > span{
     margin-top: 15%;
-    margin-left: 100%;
+    margin-left: 97%;
     font-size: 2rem;
     color: #185ADB;
     opacity: .8;
+}
+
+/* SEÇÃO CONTATO */
+
+body > main > section.contato{
+    height: 550px;
+    margin-top: 0;
+}
+
+body > main > section.contato > h2{
+    text-transform: uppercase;
+}
+
+body > main > section.contato > h2,
+body > main > section.contato > p{
+    text-align: center;
+}
+
+body > main > section.contato > div.grid-contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+    margin-top: 5%;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-left > ul{
+    list-style: none;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-left > ul > li{
+    margin-top: 7%;
+    display: block;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-left > ul > li > i{
+    float: left;
+    margin-right: 5%;
+    font-size: 2.2rem;
+    color: #185ADB;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-left > ul > li > span{
+    font-size: .8rem;
+    color: #8a8a8a;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form{
+    display: block;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > input{
+    background-color: #2767e715;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: #121212;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > input:focus,
+body > main > section.contato > div.grid-contato > div.contato-right > form > input:active{
+    border: 2px solid #185ADB;
+    color: #121212;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > input:nth-child(2){
+    margin-left: 2%;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > input:nth-child(3){
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 99%;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > textarea{
+    display: block;
+    background-color: #2767e715;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: #121212;
+    width: 99%;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > textarea:focus,
+body > main > section.contato > div.grid-contato > div.contato-right > form > textarea:active{
+    border: 2px solid #185ADB;
+    color: #121212;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > button{
+    margin-top: 3%;
+    border: none;
+    padding: .9rem .9rem;
+    border-radius: .5rem;
+    background-color: #185ADB;
+    color: #FEFEFE;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+body > main > section.contato > div.grid-contato > div.contato-right > form > button:hover{
+    width: 20%;
 }
 
 /* RODAPÉ */
@@ -834,6 +939,12 @@ footer > div.grid-rodape > div.grid-rodape-center > ul > li > a,
 footer > div.grid-rodape > div.grid-rodape-right > ul > li > a{
     text-decoration: none;
     color: #FEFEFE;
+}
+
+footer > div.grid-rodape > div.grid-rodape-center > ul > li > a:hover,
+footer > div.grid-rodape > div.grid-rodape-right > ul > li > a:hover{
+    color: #fefefe85;
+    
 }
 
 footer > p{
