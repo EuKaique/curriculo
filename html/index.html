@@ -15,16 +15,16 @@
 </head>
 <body id="fundo" onload="EducationSet()">
     <header>
-        <nav id=fundo-header>
+        <nav id="fundo-header" class="nav-menu">
             <h4>Kaique</h4>
             <ul>
-                <li id="info-menu"><a class="nav-item active" href="#">Inicio</a></li>
-                <li id="about-menu"><a class="nav-item" id="aA" href="#">Sobre</a></li>
-                <li id=""><a class="nav-item" id="aB" href="#">Habilidades</a></li>
-                <li id=""><a class="nav-item" id="aC" href="#">Serviços</a></li>
-                <li id=""><a class="nav-item" id="aD" href="#">Portfolio</a></li>
-                <li id=""><a class="nav-item" id="aE" href="#">Contato</a></li>
-                <li id="lampada"><i id="aF" class="fas fa-lightbulb"></i></li>
+                <li><a class="nav-item active" href="#info">Inicio</a></li>
+                <li><a class="nav-item" id="aA" href="#about">Sobre</a></li>
+                <li><a class="nav-item" id="aB" href="#skills">Habilidades</a></li>
+                <li><a class="nav-item" id="aC" href="#services">Serviços</a></li>
+                <li><a class="nav-item" id="aD" href="#portfolios">Portfolio</a></li>
+                <li><a class="nav-item" id="aE" href="#contato">Contato</a></li>
+                <li id="lampada"><i class="far fa-moon change-theme"></i></li>
             </ul>
         </nav>
     </header>
@@ -38,12 +38,11 @@
                     <li><a href="https://www.instagram.com/kaique_o_s/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </aside>
-            <div class="info">
+            <section class="info">
                 <h1>Olá, Eu sou o Kaique</h1>
                 <h4>Analista programador</h4>
-                <p>Experiência com desenvolvimento web, criação de estruturas html, estilos css e interação javascript. Php como back-end e banco de dados MySQL</p>
-                
-            </div>
+                <p>Experiência com desenvolvimento web, criação de estruturas html, estilos css e interação javascript. Php como back-end e banco de dados MySQL</p>    
+            </section>
             <div class="image">
                 <img src="../img/kaique.jpg" alt="Currículo Web Kaique">
             </div>
@@ -207,7 +206,7 @@
                 <span><i class="fas fa-ellipsis-h"></i></span>
             </div>
         </section>
-        <section class="contato">
+        <section id="contato" class="contato">
             <h2>Contato</h2>
             <p>Envie sua mensagem</p>
             <div class="grid-contato">
@@ -261,6 +260,8 @@
         </div>
         <p>&reg; Kaique Oliveira Santos - 2021</p>
     </footer>
+    <!--SCROLL TOP-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="fas fa-arrow-up scrollup__icon"></i></a>
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>

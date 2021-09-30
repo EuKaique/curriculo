@@ -22,6 +22,36 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #185ADB;  /* creates padding around scroll thumb */
 }
 
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    background-color: #185ADB;
+    opacity: .8;
+    padding: .5rem .5rem;
+    border-radius: .4rem;
+    z-index: 1000;
+    transition: .4s;
+}
+
+.scrollup:hover{
+    background-color: #FEFEFE;
+    color: #185ADB;
+}
+
+.scrollup__icon{
+    font-size: 1.3rem;
+    color: #FEFEFE;
+}
+
+.scrollup__icon:hover{
+    color: #185ADB;
+}
+
+.show-scroll{
+    bottom: 5rem;
+}
+
 /* CABEÇALHO */
 body > header{
     position: fixed;
@@ -66,6 +96,10 @@ body > header > nav > ul > li > a:hover{
     transition-delay: .2s;
 }
 
+.change-theme:hover{
+    color: #185ADB;
+}
+
 /* MENU PRINCIPAL */
 body > main{
     padding: 1.2rem 7rem 1.2rem 5rem;
@@ -99,7 +133,7 @@ body > main > div > div.columns{
     grid-template-columns: 1fr .5fr;
 }
 
-body > main > div > div.info{
+body > main > div > section.info{
     display: inline-block;
     width: 48%;
     margin-left: 5%;
@@ -107,12 +141,12 @@ body > main > div > div.info{
     margin-bottom: 30rem;
 }
 
-body > main > div > div.info > h1{
+body > main > div > section.info > h1{
     font-size: 3rem;
 }
 
-body > main > div > div.info > h1,
-body > main > div > div.info > h4{
+body > main > div > section.info > h1,
+body > main > div > section.info > h4{
     line-height: 3rem;
 }
 
@@ -951,3 +985,6 @@ footer > p{
     text-align: center;
     font-size: .8rem;
 }
+
+/* RESPONSIVO PARA CELULAR E TABLET */
+

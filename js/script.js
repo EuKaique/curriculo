@@ -1,5 +1,4 @@
 /* ESCURECER O SITE */
-
 var fundo = document.getElementById('fundo');
 var fundoHeader = document.getElementById('fundo-header');
 var aA = document.getElementById('aA');
@@ -34,7 +33,6 @@ var lampada = document.getElementById('lampada').addEventListener('click', () =>
 });
 
 /* MOSTRAR E OCULTAR SEÇÃO - EDUCATION E WORK */
-
 var blockEducation = document.getElementById('block-education');
 var blockWork = document.getElementById('block-work');
 
@@ -53,48 +51,45 @@ function MostraWork(){
     blockWork.style.display = "block";
 }
 
-/* UTILIZAÇÃO DO JQUERY */    
-$(document).ready(function(){
-    // SCROLL PARA AS SEÇÕES
-    let navBtn = $('.nav-item');
+/* SCROLL DAS SEÇÕES ATIVAS */
+const sections = document.querySelectorAll('section[id]');
 
-    let infoSection = $('#info-menu');
-    let aboutSection = $('#about-menu');
-    let skillsSection = $('#skills');
-    let experienceSection = $('#experience');
-    let servicesSection = $('#services');
+function scrollActive(){
+    const scrollY = window.pageYOffset;
 
-    let scrollTo = '';
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute('id');
 
-    $(navBtn).click(function(){
-        let btnId = $(this).attr('id');
-
-        if(btnId == 'info-menu'){
-            scrollTo = infoSection
-        }else if(btnId == 'about-menu'){
-            scrollTo = aboutSection
-        }else if(btnId == 'skills'){
-            scrollTo = skillsSection
-        }else if(btnId == 'experience'){
-            scrollTo = experienceSection
-        }else if(btnId == 'services'){
-            scrollTo = servicesSection
+        if((scrollY > sectionTop) && (scrollY <= sectionTop + sectionHeight)){
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active');
         }else{
-            scrollTo = bannerSection
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active');
         }
-
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $(scrollTo).offset().top - 70
-        }, 1500);
     });
+}
+window.addEventListener('scroll',scrollActive);
 
-    /* CARROSEL DOS PORTFÓLIOS */
-    $('.portfolios-slider').owlCarousel({
-        items: 1,
-        section: true,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 8000,
-        loop: true
-    })
+
+/* SCROLL UP */
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+
+    if(this.scrollY >= 560){
+        scrollUp.classList.add('show-scroll');
+    }else{
+        scrollUp.classList.remove('show-scroll');
+    }
+}
+window.addEventListener('scroll',scrollUp);
+/* CARROSEL DOS PORTFÓLIOS */
+$('.portfolios-slider').owlCarousel({
+    items: 1,
+    section: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 8000,
+    loop: true
 });
+
