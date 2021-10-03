@@ -7,19 +7,46 @@
     outline: none;
 }
 
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #FEFEFE;
+}
+
+body.dark-theme{
+    background-color: #121212;
+    color: #FFFFFF;
+    --scroll-bar-color: #121212;
+    --scroll-thumb-color: #FEFEFE;
+}
+
+body.dark-theme::-webkit-scrollbar-thumb{
+    --scroll-bar-color: #121212; 
+    --scroll-thumb-color: #121212;
+    border-radius: 20px;
+    background-color: #c0c0c044;
+}
+body.dark-theme::-webkit-scrollbar-thumb:hover{
+    background-color: #185ADB;
+}
 /* SCROLL */
-body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    --scroll-bar-color: #FEFEFE;
+    border-radius: 20px;
 }
   
-body::-webkit-scrollbar-track {
-    background: black;        /* color of the tracking area */
+::-webkit-scrollbar-thumb {
+    --scroll-bar-color: #121212; 
+    --scroll-thumb-color: #121212;
+    border-radius: 20px;
+    background-color: #12121244;
 }
-  
-body::-webkit-scrollbar-thumb {
-    background-color: #185ADB;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 1px solid #185ADB;  /* creates padding around scroll thumb */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #185ADB;
 }
 
 .scrollup{
@@ -57,19 +84,19 @@ body > header{
     position: fixed;
     right: 0;
     left: 0;
-    background-color: #FEFEFE;
+    background-color: inherit;
     z-index: 10000;
 }
 body > header > nav{
     padding: 1.2rem 7rem 1.2rem 5rem;
-    background-color: #FEFEFE;
-    color: #121212;
+    background-color: inherit;
+    color: inherit;
 }
 
 body > header > nav > ul{
     list-style: none;
     display: flex;
-    margin-left: 60%;
+    margin-left: 55%;
     position: relative;
     margin-top: -1.2rem;
 }
@@ -78,13 +105,13 @@ body > header > nav > ul > li{
     font-size: 1rem;
     font-weight: 600;
     margin-right: 1rem;
-    color: #121212;
+    color: inherit;
     cursor: pointer;
 }
 
 body > header > nav > ul > li > a{
     text-decoration: none;
-    color: #121212;
+    color: inherit;
 }
 
 body > header > nav > ul > li > a.active{
@@ -105,35 +132,51 @@ body > main{
     padding: 1.2rem 7rem 1.2rem 5rem;
 }
 
-body > main > div > aside{
+body > main > section > aside{
     margin-top: 10%;
     position: relative;
     display: inline-block;
 }
 
-body > main > div > aside > ul{
+body > main > section > aside > ul{
     list-style: none;
 }
 
-body > main > div > aside > ul > li{
+body > main > section > aside > ul > li{
     font-size: 1.4rem; 
 }
 
-body > main > div > aside > ul > li > a{
+body > main > section > aside > ul > li > a{
     color: #185ADB;
     text-decoration: none;
 }
 
-body > main > div > aside > ul > li > a > i{
+body > main > section > aside > ul > li > a > i{
     margin-bottom: .9rem;
 }
 
-body > main > div > div.columns{
+.fa-linkedin-in:hover{
+    color: #18bedb;
+}
+
+.fa-github:hover{
+    filter: invert(50%);
+}
+
+.fa-facebook-f:hover{
+    color: #3f70d3;
+}
+
+.fa-instagram:hover{
+    color: #db18bb;
+}
+
+body > main > section > div.columns{
     display: grid;
     grid-template-columns: 1fr .5fr;
 }
 
-body > main > div > section.info{
+body > main > section > div.info{
     display: inline-block;
     width: 48%;
     margin-left: 5%;
@@ -141,23 +184,23 @@ body > main > div > section.info{
     margin-bottom: 30rem;
 }
 
-body > main > div > section.info > h1{
+body > main > section > div.info > h1{
     font-size: 3rem;
 }
 
-body > main > div > section.info > h1,
-body > main > div > section.info > h4{
+body > main > section > div.info > h1,
+body > main > section > div.info > h4{
     line-height: 3rem;
 }
 
-body > main > div > div.image {
+body > main > section > div.image {
     display: inline-flex;
     width: 40%;
     justify-content: center;
     align-items: center;
 }
 
-body > main > div > div.image > img{
+body > main > section > div.image > img{
     width: 14rem;
     height: 14rem;
     border-radius: 3rem;
@@ -165,7 +208,7 @@ body > main > div > div.image > img{
     margin-top: 120px;
 }
 
-body > main > div > a{
+body > main > section > a{
     position: absolute;
     display: block;
     margin-top: -400px;
@@ -179,7 +222,7 @@ body > main > div > a{
     text-decoration: none;
 }
 
-body > main > div > a:hover{
+body > main > section > a:hover{
     transition-delay: .2s;
     padding: 1rem 1.2rem;
 }
@@ -671,6 +714,7 @@ body > main > section.experience > div.block-work > div.block-03 > span > i{
     margin-right: 1%;
 }
 
+/* SERVICES */
 body > main > section.services{
     height: 500px;
     margin-top: 0;
@@ -729,7 +773,7 @@ body > main > section.services > div.services-flex > div.service > a{
     font-size: .9rem;
     display: block;
     text-decoration: none;
-    color: #121212;
+    color: inherit;
 }
 
 body > main > section.services > div.services-flex > div.service > a:hover{
@@ -740,95 +784,87 @@ body > main > section.services > div.services-flex > div.service > a > i:hover{
     margin-left: 1%;
 }
 
+.services__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.services__modal-content{
+    position: relative;
+    background-color: #FEFEFE;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.services__modal-services{
+    row-gap: 1rem;
+}
+
+.services__modal-service{
+    display: flex;
+}
+
+.services__modal-close{
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+    display: inline;
+}
+
+.services__modal-icon{
+    color: #000000;
+    margin-right: 1rem;
+}
+
+.active-modal{
+    visibility: visible;
+    opacity: 1;
+}
+
+.services__modal-content h4{
+    margin-bottom: 1rem;
+    color: #121212;
+}
+
+.services__modal li{
+    margin-bottom: .5rem;
+    color: #121212;
+}
+
 /* PORTFÓLIOS */
-body > main > section.portfolios{
-    height: 500px;
-    margin-top: 0;
+.portfolio__container{
+    overflow: initial;
 }
 
-body > main > section.portfolios h2{
-    margin-top: 5%;
-    text-transform: uppercase;
+.portfolio_content{
+    padding: 0 1.5rem;
 }
 
-body > main > section.portfolios h2,
-body > main > section.portfolios p{
-    text-align: center;
+.portfolio-img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
 }
 
-body > main > section.portfolios > div.portfolios-container{
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 5rem;
+.portfolio__title{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
-
-body > main > section.portfolios > div.portfolios-container > div.block-left > button{
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: #185ADB;
-    float: left;
-    margin-top: 15%;
-    cursor: pointer;
-}
-
-body > main > section.portfolios > div.portfolios-container > div.block-left > img{
-    width: 18rem;
-    height: 10rem;
-    margin-left: 15%;
-    margin-top: 2%;
-    border-radius: .8rem;
-}
-
-body > main > section.portfolios > div.portfolios-container > div.block-right > h4{
-    margin-top: 6%;
-}
-
-body > main > section.portfolios > div.portfolios-container > div.block-right > p{
-    width: 50%;
-    color: #8a8a8a;
-    text-align: left;
-    margin-top: 3%;
-}
-
-body > main > section.portfolios > div.portfolios-container > div.block-right > a{
-    text-decoration: none;
-    color: white;
-    background-color: #185ADB;
-    padding: .8rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: .8rem;
-    display: inline-block;
-    margin-top: 3%;
-    width: 16%;
-    text-transform: lowercase;
-    text-align: center;
-}
-
-body > main > section.portfolios > div.portfolios-container > div.block-right > a:hover{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-body > main > section.portfolios > div.portfolios-container > div.block-right > button{
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: #185ADB;
-    float: right;   
-    margin-top: -8%;
-    cursor: pointer;
-}
-
-body > main > section.portfolios > div.portfolios-container > span{
-    margin-top: 15%;
-    margin-left: 97%;
-    font-size: 2rem;
-    color: #185ADB;
-    opacity: .8;
-}
-
 /* SEÇÃO CONTATO */
 
 body > main > section.contato{

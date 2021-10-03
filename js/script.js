@@ -1,37 +1,26 @@
-/* ESCURECER O SITE */
-var fundo = document.getElementById('fundo');
-var fundoHeader = document.getElementById('fundo-header');
-var aA = document.getElementById('aA');
-var aB = document.getElementById('aB');
-var aC = document.getElementById('aC');
-var aD = document.getElementById('aD');
-var aE = document.getElementById('aE');
-var aF = document.getElementById('aF');
-var scrol = document.getElementsByTagName("body");
-var link1 = document.getElementById("link1");
-var link2 = document.getElementById("link2");
-var link3 = document.getElementById("link3");
+/* TEMA ESCURO E CLARO */
+const themeButton = document.getElementById("theme-button");
+const darkTheme = 'dark-theme';
+const iconTheme = 'fa-sun';
 
-var lampada = document.getElementById('lampada').addEventListener('click', () => {
-    fundo.style.backgroundColor = "#121212";
-    fundo.style.color = "#FEFEFE";
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
 
-    fundoHeader.style.backgroundColor = "#121212";
-    fundoHeader.style.color = "#FEFEFE";
-    fundoHeader.style.textDecorationColor = "#FEFEFE";
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun';
 
-    aA.style.color = "#FEFEFE";
-    aB.style.color = "#FEFEFE";
-    aC.style.color = "#FEFEFE";
-    aD.style.color = "#FEFEFE";
-    aE.style.color = "#FEFEFE";
-    aF.style.color = "#FEFEFE";
+if(selectedTheme){
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme);
+}
 
-    link1.style.color = "#FEFEFE";
-    link2.style.color = "#FEFEFE";
-    link3.style.color = "#FEFEFE";
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
 });
-
 /* MOSTRAR E OCULTAR SEÇÃO - EDUCATION E WORK */
 var blockEducation = document.getElementById('block-education');
 var blockWork = document.getElementById('block-work');
@@ -83,13 +72,28 @@ function scrollUp(){
     }
 }
 window.addEventListener('scroll',scrollUp);
-/* CARROSEL DOS PORTFÓLIOS */
-$('.portfolios-slider').owlCarousel({
-    items: 1,
-    section: true,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 8000,
-    loop: true
+
+/* MODAL SERVICES */
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('.services__button'),
+      modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal');
+}
+
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
+        modal(i);
+    });
 });
 
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal');
+        });
+    });
+});
+
+/* PORTFOLIO */

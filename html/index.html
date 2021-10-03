@@ -13,23 +13,24 @@
     <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
     <title>Currículo Web</title>
 </head>
-<body id="fundo" onload="EducationSet()">
-    <header>
-        <nav id="fundo-header" class="nav-menu">
+<body id="fundo" onload="EducationSet()" class="dark-theme">
+    <header id="header-fundo">
+        <nav id="nav-fundo" class="nav-menu">
             <h4>Kaique</h4>
             <ul>
-                <li><a class="nav-item active" href="#info">Inicio</a></li>
-                <li><a class="nav-item" id="aA" href="#about">Sobre</a></li>
-                <li><a class="nav-item" id="aB" href="#skills">Habilidades</a></li>
-                <li><a class="nav-item" id="aC" href="#services">Serviços</a></li>
-                <li><a class="nav-item" id="aD" href="#portfolios">Portfolio</a></li>
-                <li><a class="nav-item" id="aE" href="#contato">Contato</a></li>
-                <li id="lampada"><i class="far fa-moon change-theme"></i></li>
+                <li><a class="nav-item active" href="#home">Inicio</a></li>
+                <li><a class="nav-item" href="#about">Sobre</a></li>
+                <li><a class="nav-item" href="#skills">Habilidades</a></li>
+                <li><a class="nav-item" href="#experience">Experiência</a></li>
+                <li><a class="nav-item" href="#services">Serviços</a></li>
+                <li><a class="nav-item" href="#portfolios">Portfolio</a></li>
+                <li><a class="nav-item" href="#contato">Contato</a></li>
+                <li><i class="far fa-moon change-theme" id="theme-button"></i></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="info">
+        <section id="home">
             <aside>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -38,16 +39,16 @@
                     <li><a href="https://www.instagram.com/kaique_o_s/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </aside>
-            <section class="info">
+            <div class="info">
                 <h1>Olá, Eu sou o Kaique</h1>
                 <h4>Analista programador</h4>
                 <p>Experiência com desenvolvimento web, criação de estruturas html, estilos css e interação javascript. Php como back-end e banco de dados MySQL</p>    
-            </section>
+            </div>
             <div class="image">
                 <img src="../img/kaique.jpg" alt="Currículo Web Kaique">
             </div>
             <a href="https://wa.me/5511952422368">Fale comigo <i class="far fa-paper-plane"></i></a>
-        </div>
+        </section>
         <section id="about" class="about">
             <h2>Sobre mim</h2>
             <p>Introdução</p>
@@ -175,35 +176,125 @@
                 <div class="service">
                     <i class="far fa-window-restore"></i>
                     <h4>Criação de sites</h4>
-                    <a href="#" id="link1">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <a href="#services" id="link1" class="services__button">Saiba mais <i class="fas fa-arrow-right"></i></a>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4>Criação de sites</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Sites bonitos e modernos</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Para todos os dispositivos</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Ótima experiência de navegação</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>SEO otimizado</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="service">
                     <i class="fas fa-server"></i>
                     <h4>Sistemas CRUD</h4>
-                    <a href="#" id="link2">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <a href="#services" id="link2" class="services__button">Saiba mais <i class="fas fa-arrow-right"></i></a>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4>Sistemas CRUD</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Seleção de dados</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Atualize quando quiser</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Crie coisas novas</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Apague o que não vai precisar</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="service">
                     <i class="fab fa-wpforms"></i>
                     <h4>Formulários</h4>
-                    <a href="#" id="link3">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <a href="#services" id="link3" class="services__button">Saiba mais <i class="fas fa-arrow-right"></i></a>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4>Formulários</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Formulários elegantes</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Para todos os dispositivos</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Personalize como quiser</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Totalmente dinâmico</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="portfolios" class="portfolios home-slider">
-            <h2>Portfólios</h2>
-            <p>Meus trabalhos</p>
-            <div class="portfolios-container">
-                <div class="block-left">
-                    <button><i class="fas fa-chevron-left"></i></button>
-                    <img src="../img/portfolio-01.PNG" alt="Ecommerce">
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Trabalhos recentes</p>
+            <div class="portfolio_container container">
+                <div>
+                    <div class="portfolio-content grid">
+                        <img src="../img/portfolio-01.PNG" alt="portfolio 1" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Ecommerce</h3>
+                            <p>Modelo de um ecommerce moderno</p>
+                            <a href="#" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content grid">
+                        <img src="../img/portfolio-02.PNG" alt="portfolio 1" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Agência de serviços</h3>
+                            <p>Uma agência pensada para você</p>
+                            <a href="#" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content grid">
+                        <img src="../img/portfolio-03.PNG" alt="portfolio 1" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Localiza Github</h3>
+                            <p>Pesquise por qualquer usuário do github</p>
+                            <a href="#" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="block-right">
-                    <h4>Mercado rápido - Ecommerce</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="https://eukaique.github.io/Ecommerce/" target="_blank">Ver</a>
-                    <button><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <span><i class="fas fa-ellipsis-h"></i></span>
             </div>
         </section>
         <section id="contato" class="contato">
