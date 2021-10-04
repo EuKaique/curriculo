@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">    
     <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <title>Currículo Web</title>
 </head>
 <body id="fundo" onload="EducationSet()" class="dark-theme">
@@ -268,33 +268,38 @@
         <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
             <p>Trabalhos recentes</p>
-            <div class="portfolio_container container">
-                <div>
-                    <div class="portfolio-content grid">
-                        <img src="../img/portfolio-01.PNG" alt="portfolio 1" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Ecommerce</h3>
-                            <p>Modelo de um ecommerce moderno</p>
-                            <a href="#" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content grid">
-                        <img src="../img/portfolio-02.PNG" alt="portfolio 1" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Agência de serviços</h3>
-                            <p>Uma agência pensada para você</p>
-                            <a href="#" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content grid">
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="../img/portfolio-03.PNG" alt="portfolio 1" class="portfolio__img">
                         <div class="portfolio__data">
+                            <h3 class="portfolio__title">Ecommerce</h3>
+                            <p class="portfolio__description">Modelo de um ecommerce moderno</p>
+                            <a href="https://eukaique.github.io/Ecommerce/" target="_blank" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../img/portfolio-01.PNG" alt="portfolio 2" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Agência de serviços</h3>
+                            <p class="portfolio__description">Uma agência pensada para você</p>
+                            <a href="https://eukaique.github.io/Agencia-servicos/" target="_blank" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="../img/portfolio-02.PNG" alt="portfolio 3" class="portfolio__img">
+                        <div class="portfolio__data">
                             <h3 class="portfolio__title">Localiza Github</h3>
-                            <p>Pesquise por qualquer usuário do github</p>
-                            <a href="#" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right"></i></a>
+                            <p class="portfolio__description">Pesquise por qualquer usuário do github</p>
+                            <a href="https://localizador-github-github-finder-qxci5srbf-eukaique.vercel.app/" target="_blank" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right button__icon"></i></a>
                         </div>
                     </div>
                 </div>
+                <!--Botões de voltar e avançar-->
+                <div class="swiper-button-next"><i class="fas fa-chevron-right swiper-portfolio-icon"></i></div>
+                <div class="swiper-button-prev"><i class="fas fa-chevron-left swiper-portfolio-icon"></i></div>
+                <!--Paginação do slide-->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section id="contato" class="contato">
@@ -353,6 +358,7 @@
     </footer>
     <!--SCROLL TOP-->
     <a href="#" class="scrollup" id="scroll-up"><i class="fas fa-arrow-up scrollup__icon"></i></a>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>

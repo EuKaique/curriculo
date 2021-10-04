@@ -851,19 +851,103 @@ body > main > section.services > div.services-flex > div.service > a > i:hover{
     overflow: initial;
 }
 
-.portfolio_content{
+.portfolio__content{
     padding: 0 1.5rem;
 }
 
-.portfolio-img{
-    width: 265px;
+.portfolio__data{
+    display: inline-block;
+}
+.portfolio__img {
+    width: 350px;
+    height: 200px;
     border-radius: .5rem;
-    justify-self: center;
+    margin-left: 9%;
+    margin-top: 4%;
 }
 
-.portfolio__title{
+.portfolio__title {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-left: 120%;
+    margin-bottom: 8rem;
+    margin-top: -12rem;
+    width: 100%;
+    position: absolute;
+}
+
+.portfolio__title:nth-child(3) {
+    margin-left: 100%;
+    position: absolute;
+}
+.portfolio__description {
+    margin-bottom: .5rem;
+    margin-left: 76%;
+    margin-top: -6rem;
+    width: 100%;
+    position: absolute;
+}
+
+.portfolio__button {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #185ADB;
+    padding: .8rem;
+    border-radius: .5rem;
+    text-align: right;
+    margin-left: 21%;
+    margin-top: -5%;
+    position: absolute;
+}
+
+.portfolio__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.portfolio{
+    height: 500px;
+    margin-top: 3rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: #185ADB;
+}
+
+.swiper-button-prev{
+    left: -0.5rem;
+}
+
+.swiper-button-next{
+    right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #185ADB;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
+
+.portfolio h2{
+    text-transform: uppercase;
+}
+
+.portfolio h2,
+.portfolio p{
+    text-align: center;
 }
 /* SEÇÃO CONTATO */
 
