@@ -21,6 +21,35 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+/* HABILIDADES */
+let frontend = document.getElementById('frontend');
+let backend = document.getElementById('backend');
+
+function frontEnd(){
+    if(frontend){
+        document.querySelector('.front-end-skills').style.display="none";
+        document.getElementById('front-icon').style.display="none";
+        frontend.innerHTML = "<i class='fas fa-chevron-up'></i>";
+    }else{
+        document.querySelector('.front-end-skills').style.display="block";
+        document.getElementById('front-icon').style.display="block";
+        frontend.innerHTML = "<i class='fas fa-chevron-down'></i>";
+    }
+}
+
+function backEnd(){
+    if(backend){
+        document.querySelector('.back-end-skills').style.display="none";
+        document.getElementById('back-icon').style.display="none";
+        backend.innerHTML = "<i class='fas fa-chevron-up'></i>";
+    }else{
+        document.querySelector('.back-end-skills').style.display="block";
+        document.getElementById('back-icon').style.display="block";
+        backend.innerHTML = "<i class='fas fa-chevron-down'></i>";
+    }
+}
+
 /* MOSTRAR E OCULTAR SEÇÃO - EDUCATION E WORK */
 var blockEducation = document.getElementById('block-education');
 var blockWork = document.getElementById('block-work');
@@ -28,16 +57,37 @@ var blockWork = document.getElementById('block-work');
 function EducationSet(){
     blockEducation.style.display = "block";
     blockWork.style.display = "none";
+
+    if(blockEducation){
+        document.querySelector('.education').classList.add('active');
+    }else{
+        document.querySelector('.education').classList.remove('active');
+        document.querySelector('.work').classList.remove('active');
+    }
 }
 
 function MostraEducation(){
     blockEducation.style.display = "block";
     blockWork.style.display = "none";
+
+    if(blockEducation){
+        document.querySelector('.education').classList.add('active');
+        document.querySelector('.work').classList.remove('active');
+    }else{
+        document.querySelector('.education').classList.remove('active');
+    }
 }
 
 function MostraWork(){
     blockEducation.style.display = "none";
     blockWork.style.display = "block";
+
+    if(blockWork){
+        document.querySelector('.work').classList.add('active');
+        document.querySelector('.education').classList.remove('active');
+    }else{
+        document.querySelector('.work').classList.remove('active');
+    }
 }
 
 /* SCROLL DAS SEÇÕES ATIVAS */
