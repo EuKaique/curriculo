@@ -333,186 +333,131 @@ body > main > section.skills > h2{
 body > main > section.skills > p{
     text-align: center;
 }
-
-body > main > section.skills > div.front-end{
-    display: inline-block;
-    width: 40%;
-    margin-top: 3%;
-    padding: 1rem 1rem 1rem 8rem;
+.skills__container{
+    row-gap: 0;
 }
 
-body > main > section.skills > div.front-end > i{
-    color: #185ADB;
-    font-size: 1.6rem;
-}
-
-body > main > section.skills > div.front-end > h3{
-    display: inline-block;
-    margin-left: 8.5%;
-}
-
-body > main > section.skills > div.front-end > p{
-    font-size: .9rem;
-    text-align: initial;
-    margin-top: 2%;
-}
-
-body > main > section.skills > div.front-end > button{
-    background-color: transparent;
-    border-color: transparent;
-    display: inline;
-    float: right;
-    margin-top: -17%;
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
     cursor: pointer;
 }
 
-body > main > section.skills > div.front-end > button > i{
-    font-size: 1.1rem;
+.skills__icon,
+.skills__arrow{
+    font-size: 1.5rem;
     color: #185ADB;
-    opacity: .7;
 }
 
-body > main > section.skills > div.front-end > div.front-end-skills{
-    margin-top: 7%;
+.skills__icon{
+    margin-right: 1rem;
 }
 
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-01{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
+.skills__title{
+    font-size: 16px;
+}
+
+.skills__subtitle{
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.skills__name{
+    font-size: normal;
+    font-weight: 600;
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: #87aefd;
+}
+
+.skills__percentage{
+    display: block;
+    background-color: #185ADB;
+}
+
+.skills__html{
     width: 90%;
-    padding: .4rem 0;
 }
 
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-01 > p{
-    margin-left: 90%;
-}
-
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-02{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
+.skills__css{
     width: 80%;
-    padding: .9rem 0 .3rem 0;
 }
 
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-02 > p{
-    margin-left: 113%;
-}
-
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-03{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
-    width: 75%;
-    padding: .9rem 0 .3rem 0;
-}
-
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-03 > p{
-    margin-left: 126%;
-}
-
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-04{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
+.skills__js{
     width: 70%;
-    padding: .9rem 0 .3rem 0;
 }
 
-body > main > section.skills > div.front-end > div.front-end-skills > div.skill-04 > p{
-    margin-left: 142%;
+.skills__react{
+    width: 60%;
 }
 
-body > main > section.skills > div.back-end{
+.skills__php{
+    width: 82%;
+}
+
+.skills__mysql{
+    width: 85%;
+}
+
+.skills__node{
+    width: 60%;
+}
+
+.skills__python{
+    width: 65%;
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 2rem;
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
+
+.skills__container .container .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills__header{
+    margin-top: 5%;
+}
+
+.skills__content{
     display: inline-block;
     width: 40%;
-    margin-top: 3%;
-    margin-left: 12%;
-    padding: 1rem 1rem 1rem 8rem;
+    margin-right: 4%;
 }
 
-body > main > section.skills > div.back-end > i{
-    color: #185ADB;
-    font-size: 1.6rem;
-}
-
-body > main > section.skills > div.back-end > h3{
-    display: inline-block;
-    margin-left: 8.5%;
-}
-
-body > main > section.skills > div.back-end > p{
-    font-size: .9rem;
-    text-align: initial;
-    margin-top: 2%;
-}
-
-body > main > section.skills > div.back-end > button{
-    background-color: transparent;
-    border-color: transparent;
-    display: inline;
-    float: right;
-    margin-top: -17%;
-    cursor: pointer;
-}
-
-body > main > section.skills > div.back-end > button > i{
-    font-size: 1.1rem;
-    color: #185ADB;
-    opacity: .7;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills{
-    margin-top: 7%;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-01{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
-    width: 79%;
-    padding: .4rem 0;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-01 > p{
-    margin-left: 115%;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-02{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
-    width: 82%;
-    padding: .9rem 0 .3rem 0;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-02 > p{
-    margin-left: 107%;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-03{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
-    width: 72%;
-    padding: .9rem 0 .3rem 0;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-03 > p{
-    margin-left: 135%;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-04{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 3px solid #185ADB;
-    width: 66%;
-    padding: .9rem 0 .3rem 0;
-}
-
-body > main > section.skills > div.back-end > div.back-end-skills > div.skill-04 > p{
-    margin-left: 157%;
+.skills__content:first-child{
+    margin-left: 10%;
+    margin-top: 0;
 }
 
 /* SEÇÃO EXPERIENCE */
