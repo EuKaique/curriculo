@@ -40,42 +40,7 @@ function toggleSkills(){
 skillsHeader.forEach((el) => {
     el.addEventListener('click',toggleSkills);
 });
-/*
-let frontendID = document.getElementById('frontend');
-let backendID = document.getElementById('backend');
 
-let frontendClass = document.querySelector('.frontend');
-let backendClass = document.querySelector('.backend');
-
-function frontEnd(){
-    if(frontendID){
-        frontendClass.forEach((front, f) => {
-            front.addEventListener('click', () => {
-                var 
-            });
-        });
-        document.querySelector('.front-end-skills').style.display="none";
-        document.getElementById('front-icon').style.display="none";
-        frontendID.innerHTML = "<i class='fas fa-chevron-up'></i>";
-    }else{
-        document.querySelector('.front-end-skills').style.display="block";
-        document.getElementById('front-icon').style.display="block";
-        frontendID.innerHTML = "<i class='fas fa-chevron-down'></i>";
-    }
-}
-
-function backEnd(){
-    if(backendID){
-        document.querySelector('.back-end-skills').style.display="none";
-        document.getElementById('back-icon').style.display="none";
-        backendID.innerHTML = "<i class='fas fa-chevron-up'></i>";
-    }else{
-        document.querySelector('.back-end-skills').style.display="block";
-        document.getElementById('back-icon').style.display="block";
-        backendID.innerHTML = "<i class='fas fa-chevron-down'></i>";
-    }
-}
-*/
 /* MOSTRAR E OCULTAR SEÇÃO - EDUCATION E WORK */
 var blockEducation = document.getElementById('block-education');
 var blockWork = document.getElementById('block-work');

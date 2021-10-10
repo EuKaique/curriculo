@@ -1051,5 +1051,86 @@ footer > p{
     font-size: .8rem;
 }
 
-/* RESPONSIVO PARA CELULAR E TABLET */
+/* RESPONSIVO */
 
+@media screen and (max-width: 1200px){
+    body > header > nav > ul {
+        list-style: none;
+        display: flex;
+        margin-left: 50%;
+        position: relative;
+        margin-top: -1.2rem;
+    }
+
+    #home {
+        height: 680px;  
+    }
+
+    body > main > section.about {
+        height: 680px;
+        margin-top: auto;
+    }
+
+    body > main > section.skills {
+        height: 680px;
+        margin-top: auto;
+    }
+
+    .skills__container{
+        margin-top: 5rem;
+    }
+
+    body > main > section.skills > h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: auto;
+    }
+
+    body > main > section.experience > h2 {
+        text-transform: uppercase;
+        margin-top: auto;
+    }
+
+    body > main > section.services {
+        height: 500px;
+        margin-top: 15rem;
+    }
+
+    body > main > section.services > h2 {
+        margin-top: auto;
+        text-transform: uppercase;
+    }
+
+    body > main > section.services > div.services-flex > div.service {
+        margin-right: 7%;
+        box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+        padding: 6rem 3rem 10rem 3rem;
+        border-radius: 1rem;
+    }
+
+    .portfolio {
+        height: 500px;
+        margin-top: 13rem;
+    }
+
+    body > main > section.contato {
+        height: 680px;
+        margin-top: 12rem;
+    }
+
+    body > main > section.contato > div.grid-contato > div.contato-right > form > input {
+        background-color: #2767e715;
+        padding: 1rem 1rem;
+        border: none;
+        border-radius: .5rem;
+        color: #121212;
+    }
+
+    body > main > section.contato > div.grid-contato > div.contato-right > form > input {
+        background-color: #2767e715;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: .5rem;
+        color: #121212;
+    }
+}
