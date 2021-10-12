@@ -1134,3 +1134,129 @@ footer > p{
         color: #121212;
     }
 }
+
+@media screen and (max-width: 1000px){
+    body > header > nav > ul {
+        list-style: none;
+        display: flex;
+        margin-left: 41%;
+        position: relative;
+        margin-top: -1.2rem;
+    }
+
+    body > main > section > div.info > h1 {
+        font-size: 2.5rem;
+    }
+
+    body > main > section.about > div.grid-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01, 
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02, 
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03 {
+        margin-top: 10%;
+        margin-right: 6%;
+        display: inline-block;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > a {
+        display: block;
+        margin-top: 8%;
+        margin-left: 30%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: .8rem;
+        font-size: 1rem;
+        padding: .8rem 1rem;
+    }
+
+    body > main > section.experience > div.block-education > div.block-01 > p, 
+    body > main > section.experience > div.block-education > div.block-01 > span {
+        font-size: 13px;
+    }
+
+    body > main > section.experience > div.block-education > div.block-02 > p, 
+    body > main > section.experience > div.block-education > div.block-02 > span {
+        font-size: 13px;
+    }
+
+    .block-03 h4{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-education > div.block-02 {
+        height: 100px;
+        width: 27%;
+        margin-left: 50%;
+        padding: 5px 10px 0 30px;
+        line-height: 1.6rem;
+        border-left: 2px solid #185ADB;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    body > main > section.experience > div.block-work > div.block-01 {
+        height: 130px;
+        width: 20%;
+        margin-left: 30%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    body > main > section.experience > div.block-work > div.block-02 {
+        height: 100px;
+        width: 43%;
+        margin-left: 50%;
+        padding: 5px 10px 0 30px;
+        line-height: 1.6rem;
+        border-left: 2px solid #185ADB;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    body > main > section.experience > div.block-work > div.block-03 {
+        height: 150px;
+        width: 20%;
+        margin-left: 30%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    body > main > section.services > div.services-flex > div.service:nth-child(1) {
+        margin-left: 4%;
+    }
+
+    body > main > section.services > div.services-flex > div.service {
+        margin-right: 5%;
+        box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+        padding: 6rem 3rem 10rem 3rem;
+        border-radius: 1rem;
+    }
+
+    .portfolio__description {
+        margin-bottom: .5rem;
+        margin-left: 113%;
+        margin-top: -6rem;
+        width: 28%;
+        position: absolute;
+    }
+
+    .contato-right{
+        width: 130%;
+    }
+
+    body > main > section.contato > div.grid-contato > div.contato-right > form > input:nth-child(2) {
+        margin-left: 1%;
+    }
+}
