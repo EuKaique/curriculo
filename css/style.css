@@ -1508,3 +1508,266 @@ footer > p{
         font-size: .5rem;
     }
 }
+
+@media screen and (max-width: 600px){
+    body > main > section > div.image > img {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 3rem;
+        margin-left: 140px;
+        margin-top: 120px;
+        display: none;
+    }
+
+    body > main > section > aside {
+        margin-top: 100%;
+        position: relative;
+        display: block;
+    }
+
+    body > main > section > aside > ul {
+        list-style: none;
+        display: flex;
+        margin-left: 33%;
+    }
+
+    body > main > section > div.info {
+        display: block;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: -15rem;
+        margin-bottom: 35rem;
+    }
+
+    div.info > h4,
+    div.info > p{
+        text-align: center;
+    }
+
+    body > main > section > aside > ul > li {
+        font-size: 1.8rem;
+        margin-right: 10%;
+    }
+
+    body > main > section > a {
+        position: absolute;
+        display: block;
+        margin-top: -400px;
+        margin-left: 23%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: .8rem;
+        font-size: 1rem;
+        padding: .8rem 1rem;
+        color: #FEFEFE;
+        text-decoration: none;
+    }
+
+    body > main > section.about {
+        height: auto;
+        margin-top: 0%;
+    }
+
+    body > main > section.about > div.grid-about {
+        display: block;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-left {
+        width: 100%;
+        display: block;
+        margin-left: 24%;
+        margin-bottom: 5%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01, 
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02, 
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03 {
+        margin-top: 2%;
+        margin-right: 4%;
+        margin-left: 5%;
+        display: inline-block;
+        width: 22%;
+    }
+
+    .grid-about-right-02 > span{
+        margin-bottom: 18%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > a {
+        display: block;
+        margin-top: 8%;
+        margin-left: 23%;
+        margin-bottom: 10%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: .8rem;
+        font-size: 1.2rem;
+        padding: .8rem 1rem;
+        width: 50%;
+        text-align: center;
+    }
+
+    body > main > section.skills {
+        height: auto;
+        margin-top: 5%;
+    }
+
+    body > main > section.experience {
+        height: auto;
+        margin-top: 10%;
+    }
+
+    body > main > section.experience > button.education {
+        margin-left: 0%;
+    }
+
+    body > main > section.experience > button.work {
+        margin-left: 49%;
+    }
+
+    body > main > section.experience > div.block-education > div.block-01,
+    body > main > section.experience > div.block-education > div.block-02,
+    body > main > section.experience > div.block-education > div.block-03 {
+        height: 100px;
+        width: 55%;
+        margin-left: 22%;
+        margin-top: 5%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-left: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .block-03 h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    div.block-education > div.block-01 > h4,
+    div.block-education > div.block-02 > h4,
+    div.block-education > div.block-03 > h4{
+        text-align: center;
+    }
+
+    div.block-education > div.block-01 > span,
+    div.block-education > div.block-02 > span,
+    div.block-education > div.block-03 > span {
+        margin-left: 28%;
+    }
+
+    /* WORK */
+    body > main > section.experience > div.block-work > div.block-01,
+    body > main > section.experience > div.block-work > div.block-02,
+    body > main > section.experience > div.block-work > div.block-03 {
+        height: 100px;
+        width: 55%;
+        margin-left: 22%;
+        margin-top: 5%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-left: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .block-03 h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    div.block-work > div.block-01 > h4,
+    div.block-work > div.block-02 > h4,
+    div.block-work > div.block-03 > h4{
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-work > div.block-01 > p, 
+    body > main > section.experience > div.block-work > div.block-02 > p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    div.block-work > div.block-01 > span,
+    div.block-work > div.block-02 > span,
+    div.block-work > div.block-03 > span {
+        margin-left: 28%;
+    }
+
+    body > main > section.services > div.services-flex > div.service:nth-child(1),
+    body > main > section.services > div.services-flex > div.service:nth-child(2),
+    body > main > section.services > div.services-flex > div.service:nth-child(3) {
+        margin-top: 5%;
+        margin-left: 2%;
+        width: 100%;
+        padding: 2rem 8rem;
+    }
+
+    .portfolio__title {
+        font-size: 1.2rem;
+        margin-left: 120%;
+        margin-bottom: 8rem;
+        margin-top: -12rem;
+        width: 100%;
+        position: absolute;
+        display: none;
+    }
+
+    .portfolio__description {
+        margin-bottom: .5rem;
+        margin-left: 113%;
+        margin-top: -6rem;
+        width: 28%;
+        position: absolute;
+        display: none;
+    }
+
+    .portfolio__button {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        background-color: #185ADB;
+        padding: .8rem;
+        border-radius: .5rem;
+        text-align: right;
+        margin-left: 0%;
+        margin-top: 2%;
+        position: absolute;
+    }
+
+    body > main > section.contato > div.grid-contato {
+        display: block;
+        padding: 0 2rem;
+        margin-top: 15%;
+    }
+
+    div.contato-left {
+        margin-left: 28%;
+        margin-bottom: 12%;
+    }
+
+    .contato-right {
+        width: 130%;
+        margin-left: -8%;
+    }
+
+    .grid-rodape-left h4 {
+        font-size: .5rem;
+        display: none;
+    }
+
+    footer > div.grid-rodape {
+        display: grid;
+        grid-template-columns: .8fr .8fr .8fr;
+        padding: 3rem 3rem;
+    }
+
+}
