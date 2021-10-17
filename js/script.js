@@ -149,4 +149,13 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
+});
+
+/* MOSTRAR E OCULTAR MENU NO RESPONSIVO */
+$(document).ready(function(){
+    var menu = $('#menu');
+
+    $(menu).on('click', function(){
+        $('.nav-container ul').toggleClass('open');
+    });
+});

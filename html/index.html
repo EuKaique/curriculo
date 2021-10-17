@@ -16,17 +16,20 @@
 <body id="fundo" onload="EducationSet()" class="dark-theme">
     <header id="header-fundo">
         <nav id="nav-fundo" class="nav-menu">
-            <h4>Kaique</h4>
-            <ul>
-                <li><a class="nav-item active" href="#home">Inicio</a></li>
-                <li><a class="nav-item" href="#about">Sobre</a></li>
-                <li><a class="nav-item" href="#skills">Habilidades</a></li>
-                <li><a class="nav-item" href="#experience">Experiência</a></li>
-                <li><a class="nav-item" href="#services">Serviços</a></li>
-                <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-item" href="#contato">Contato</a></li>
-                <li><i class="far fa-moon change-theme" id="theme-button"></i></li>
-            </ul>
+            <div class="nav-container">
+                <h4 class="nav-h4">Kaique</h4>
+                <i id="menu" class="fas fa-bars btn-menumobile"></i>
+                <ul id="nav-items">
+                    <li><a class="nav-item active" href="#home">Inicio</a></li>
+                    <li><a class="nav-item" href="#about">Sobre</a></li>
+                    <li><a class="nav-item" href="#skills">Habilidades</a></li>
+                    <li><a class="nav-item" href="#experience">Experiência</a></li>
+                    <li><a class="nav-item" href="#services">Serviços</a></li>
+                    <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-item" href="#contato">Contato</a></li>
+                    <li><i class="far fa-moon change-theme" id="theme-button"></i></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -411,7 +414,7 @@
     <!--SCROLL TOP-->
     <a href="#" class="scrollup" id="scroll-up"><i class="fas fa-arrow-up scrollup__icon"></i></a>
     <script src="../js/swiper-bundle.min.js"></script>
-    <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
