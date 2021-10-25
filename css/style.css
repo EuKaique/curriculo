@@ -2058,4 +2058,623 @@ footer > p{
         margin-left: -110%;
         margin-top: 30%;  
     }
-}    
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px){
+    .nav-container ul li {
+        display: block;
+        background-color: #185ADB;
+        border-top: 1px solid #FFF;
+        position: static;
+        width: 220%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: -50%;
+        height: 100;
+    }
+
+    .nav-container ul li:last-child {
+        display: block;
+        background-color: #185ADB;
+        border-top: 1px solid #FFF;
+        position: static;
+        width: 220%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: -50%;
+        height: 100vh;
+    }
+
+    body > main > section > div.info > h1 {
+        font-size: 1.3rem;
+        margin-top: 60%;
+        line-height: 0.1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+ 
+    div.info > p {
+        text-align: justify;
+        margin-top: 15%;
+    }
+
+    body > main > section > aside > ul > li:first-child {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 80%;
+        margin-left: -28%;
+    }
+
+    body > main > section > aside > ul > li:nth-child(2) {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 80%;
+        margin-left: -2%;
+    }
+
+    body > main > section > aside > ul > li:nth-child(3) {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 28%;
+    }
+
+    body > main > section > aside > ul > li:last-child {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 57%;
+    }
+
+    body > main > section > a {
+        position: absolute;
+        display: block;
+        margin-top: -400px;
+        margin-left: 12%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        color: #FEFEFE;
+        text-decoration: none;
+    }
+
+    body > main > section.about {
+        height: auto;
+        margin-top: -100%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-left {
+        width: 100%;
+        display: block;
+        margin-left: 4%;
+        margin-bottom: 5%;
+        margin-top: 12%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > p {
+        text-align: justify;
+        font-size: .9rem;
+        width: 100%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01,
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02,
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03 {
+        margin-top: 12%;
+        margin-right: 4%;
+        margin-left: 0%;
+        display: block;
+        width: 100%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02 > span{
+        margin-bottom: 0;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > a {
+        display: block;
+        margin-top: 20%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: 0.8rem;
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    body > main > section.skills {
+        height: auto;
+        margin-top: 100%;
+    }
+
+    .skills__content:first-child {
+        margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 30%;
+    }
+
+    .skills__content:last-child {
+        margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 0%;
+    }
+
+    .skills__content {
+        display: block;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    body > main > section.experience {
+        height: auto;
+        margin-top: 50%;
+    }
+
+    body > main > section.experience > button.education {
+        margin-left: -3%;
+        display: inline-block;
+    }
+
+    body > main > section.experience > button.work {
+        margin-left: 7%;
+        display: inline-block;
+        margin-top: 12%;
+        margin-bottom: 12%;
+    }
+
+    body > main > section.experience > div.block-education > div.block-01, 
+    body > main > section.experience > div.block-education > div.block-02, 
+    body > main > section.experience > div.block-education > div.block-03 {
+        height: 100px;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 12%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-left: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    body > main > section.experience > div.block-work > div.block-01,
+    body > main > section.experience > div.block-work > div.block-02,
+    body > main > section.experience > div.block-work > div.block-03 {
+        height: 100px;
+        width: 168%;
+        margin-left: -25%;
+        margin-top: 12%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-left: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    body > main > section.services {
+        height: auto;
+        margin-top: 100%;
+    }
+
+    body > main > section.services > div.services-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        width: 140%;
+    }
+
+    body > main > section.services > div.services-flex > div.service:nth-child(1),
+    body > main > section.services > div.services-flex > div.service:nth-child(2),
+    body > main > section.services > div.services-flex > div.service:nth-child(3) {
+        margin-top: 12%;
+        margin-left: -10%;
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+
+    body > main > section.services > div.services-flex > div.service > h4 {
+        margin-top: 5%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    body > main > section.services > div.services-flex > div.service > i {
+        font-size: 1.3rem;
+        color: #185ADB;
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+    }
+
+    body > main > section.services > div.services-flex > div.service > a {
+        margin-top: 12%;
+        margin-left: 0;
+        font-size: .9rem;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+    }
+
+    .swiper {
+        margin-left: -39% !important;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        width: 190% !important;
+    }
+    
+    body > main > section.contato {
+        height: auto;
+        margin-top: 40%;
+    }
+
+    div.contato-left {
+        margin-left: 0%;
+        margin-bottom: 15%;
+        width: 100%;
+    }
+
+    .contato-right {
+        width: 210%;
+        margin-left: -50%;
+    }
+
+    footer > div.grid-rodape > div.grid-rodape-left {
+        display: none;
+    }
+
+    footer > div.grid-rodape > div.grid-rodape-right {
+        margin-left: -110%;
+        margin-top: 30%;  
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 399px){
+    .nav-container ul li {
+        display: block;
+        background-color: #185ADB;
+        border-top: 1px solid #FFF;
+        position: static;
+        width: 220%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: -50%;
+        height: 100;
+    }
+
+    .nav-container ul li:last-child {
+        display: block;
+        background-color: #185ADB;
+        border-top: 1px solid #FFF;
+        position: static;
+        width: 220%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: -50%;
+        height: 100vh;
+    }
+
+    body > main > section > div.info > h1 {
+        font-size: 1rem;
+        margin-top: 120%;
+        line-height: 0.1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    body > main > section > div.info > h4 {
+        line-height: 1rem;
+        margin-top: 20%;
+    }   
+ 
+    div.info > p {
+        text-align: justify;
+        margin-top: 30%;
+        width: 115%;
+    }
+
+    body > main > section > aside > ul > li:first-child {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 150%;
+        margin-left: -28%;
+    }
+
+    body > main > section > aside > ul > li:nth-child(2) {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 150%;
+        margin-left: -2%;
+    }
+
+    body > main > section > aside > ul > li:nth-child(3) {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 150%;
+        margin-left: 28%;
+    }
+
+    body > main > section > aside > ul > li:last-child {
+        font-size: 1.8rem;
+        margin-right: 10%;
+        position: absolute;
+        margin-top: 150%;
+        margin-left: 57%;
+    }
+
+    body > main > section > a {
+        position: absolute;
+        display: block;
+        margin-top: -450px;
+        margin-left: 5%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        color: #FEFEFE;
+        text-decoration: none;
+    }
+
+    body > main > section.about {
+        height: auto;
+        margin-top: -100%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-left {
+        width: 100%;
+        display: block;
+        margin-left: 0%;
+        margin-bottom: 8%;
+        margin-top: 12%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-left > img {
+        width: 12rem;
+        height: 12rem;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > p {
+        text-align: justify;
+        font-size: .9rem;
+        width: 112%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01,
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02,
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-03 {
+        margin-top: 12%;
+        margin-right: 4%;
+        margin-left: 0%;
+        display: block;
+        width: 100%;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-02 > span{
+        margin-bottom: 0;
+    }
+
+    body > main > section.about > div.grid-about > div.grid-about-right > a {
+        display: block;
+        margin-top: 20%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background-color: #185ADB;
+        border-color: transparent;
+        border-radius: 0.8rem;
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    body > main > section.skills {
+        height: auto;
+        margin-top: 100%;
+    }
+
+    body > main > section.experience > p {
+        text-align: center;
+        width: 110%;
+    }
+
+    .skills__content:first-child {
+        margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 30%;
+    }
+
+    .skills__content:last-child {
+        margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 0%;
+    }
+
+    .skills__content {
+        display: block;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    body > main > section.experience {
+        height: auto;
+        margin-top: 50%;
+    }
+
+    body > main > section.experience > button.education {
+        margin-left: -35%;
+        display: inline-block;
+    }
+
+    body > main > section.experience > button.work {
+        margin-left: 7%;
+        display: inline-block;
+        margin-top: 12%;
+        margin-bottom: 12%;
+    }
+
+    body > main > section.experience > div.block-education > div.block-01, 
+    body > main > section.experience > div.block-education > div.block-02, 
+    body > main > section.experience > div.block-education > div.block-03 {
+        height: 100px;
+        width: 135%;
+        margin-left: -10%;
+        margin-top: 12%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-left: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    body > main > section.experience > div.block-education > div.block-01 > p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-work > div.block-01,
+    body > main > section.experience > div.block-work > div.block-02,
+    body > main > section.experience > div.block-work > div.block-03 {
+        height: 100px;
+        width: 168%;
+        margin-left: -25%;
+        margin-top: 12%;
+        padding: 0px 10px;
+        line-height: 1.6rem;
+        border-right: 2px solid #185ADB;
+        border-left: 2px solid #185ADB;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    body > main > section.services {
+        height: auto;
+        margin-top: 100%;
+    }
+
+    body > main > section.services > div.services-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        width: 140%;
+    }
+
+    body > main > section.services > div.services-flex > div.service:nth-child(1),
+    body > main > section.services > div.services-flex > div.service:nth-child(2),
+    body > main > section.services > div.services-flex > div.service:nth-child(3) {
+        margin-top: 12%;
+        margin-left: -10%;
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+
+    body > main > section.services > div.services-flex > div.service > h4 {
+        margin-top: 5%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    body > main > section.services > div.services-flex > div.service > i {
+        font-size: 1.3rem;
+        color: #185ADB;
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+    }
+
+    body > main > section.services > div.services-flex > div.service > a {
+        margin-top: 12%;
+        margin-left: 0;
+        font-size: .9rem;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+    }
+
+    .swiper {
+        margin-left: -39% !important;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        width: 190% !important;
+    }
+    
+    .portfolio__img {
+        width: 145px;
+        height: 145px;
+        border-radius: 0.5rem;
+        margin-left: 9%;
+        margin-top: 20%;
+    }
+
+    body > main > section.contato {
+        height: auto;
+        margin-top: 40%;
+    }
+
+    body > main > section.contato > div.grid-contato {
+        display: block;
+        padding: 0 1rem;
+        margin-top: 15%;
+    }
+
+    div.contato-left {
+        margin-left: 0%;
+        margin-bottom: 15%;
+        width: 110%;
+    }
+
+    .contato-right {
+        width: 210%;
+        margin-left: -50%;
+    }
+
+    footer > div.grid-rodape > div.grid-rodape-left {
+        display: none;
+    }
+
+    footer > div.grid-rodape > div.grid-rodape-right {
+        margin-left: -125%;
+        margin-top: 30%;  
+    }
+
+    footer > div.grid-rodape > div.grid-rodape-center {
+        margin-left: 4%;
+    }
+    
+    
+}
