@@ -1068,7 +1068,7 @@ footer > p{
     }
 
     #home {
-        height: 680px;  
+        height: auto;  
     }
 
     body > main > section.about {
