@@ -498,12 +498,14 @@ body > main > section.experience > button.active{
     color: #185ADB;
 }
 
-body > main > section.experience > button.education{
+button.education{
     margin-left: 30%;
+    color: #4F4F4F;
 }
 
-body > main > section.experience > button.work{
+button.work{
     margin-left: 20%;
+    color: #4F4F4F;
 }
 
 body > main > section.experience > button > i{
@@ -2220,13 +2222,17 @@ footer > p{
         margin-top: 50%;
     }
 
+    body > main > section.experience > button > i {
+        margin-left: 65%;
+    }
+    
     body > main > section.experience > button.education {
-        margin-left: -3%;
+        width: 20%;
         display: inline-block;
     }
 
     body > main > section.experience > button.work {
-        margin-left: 7%;
+        width: 20%;
         display: inline-block;
         margin-top: 12%;
         margin-bottom: 12%;
