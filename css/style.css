@@ -1,6 +1,6 @@
 /* GERAL*/
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,6 +31,12 @@ body.dark-theme::-webkit-scrollbar-thumb{
 body.dark-theme::-webkit-scrollbar-thumb:hover{
     background-color: #185ADB;
 }
+
+.fa-moon:before {
+    content: "\f186";
+    color: rgba(0,0,150,0.5);
+}
+
 /* SCROLL */
 ::-webkit-scrollbar {
     width: 12px;
@@ -191,6 +197,10 @@ body > main > section > div.info{
 
 body > main > section > div.info > h1{
     font-size: 3rem;
+}
+
+.info > h1 > b{
+    color: #185ADB;
 }
 
 body > main > section > div.info > h1,
@@ -951,7 +961,7 @@ body > main > section.contato > div.grid-contato > div.contato-right > form{
 
 body > main > section.contato > div.grid-contato > div.contato-right > form > input{
     background-color: #2767e715;
-    padding: 1rem 2rem;
+    padding: 1rem 1.2rem;
     border: none;
     border-radius: .5rem;
     color: #121212;
@@ -1273,6 +1283,10 @@ footer > p{
         overflow-x: hidden;
     }
 
+    body > header > nav > div > ul > li > a.active{
+        color: rgba(0,0,150,0.5);
+    }
+
     nav{
         height: 6.2em;
     }
@@ -1512,6 +1526,10 @@ footer > p{
 }
 
 @media screen and (max-width: 600px){
+    body > header > nav > div > ul > li > a.active{
+        color: rgba(0,0,150,0.5);
+    }
+
     body > main > section > div.image > img {
         width: 14rem;
         height: 14rem;
@@ -1775,6 +1793,10 @@ footer > p{
 }
 
 @media screen and (max-width: 400px){
+    body > header > nav > div > ul > li > a.active{
+        color: rgba(0,0,150,0.5);
+    }
+
     .nav-container ul li {
         display: block;
         background-color: #185ADB;
@@ -1809,7 +1831,7 @@ footer > p{
     
  
     div.info > p {
-        text-align: justify;
+        text-align: center;
         margin-top: 15%;
     }
 
@@ -2063,6 +2085,10 @@ footer > p{
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px){
+    body > header > nav > div > ul > li > a.active{
+        color: rgba(0,0,150,0.5);
+    }
+
     .nav-container ul li {
         display: block;
         background-color: #185ADB;
@@ -2097,7 +2123,7 @@ footer > p{
     
  
     div.info > p {
-        text-align: justify;
+        text-align: center;
         margin-top: 15%;
     }
 
@@ -2355,6 +2381,19 @@ footer > p{
 }
 
 @media screen and (min-width: 350px) and (max-width: 399px){
+    .info > h1{
+        width: 125%; 
+        margin-left: -10%;
+    }
+
+    .info > h1 > b{
+        color: #185ADB;
+    }
+
+    body > header > nav > div > ul > li > a.active{
+        color: rgba(0,0,150,0.5);
+    }
+
     .nav-container ul li {
         display: block;
         background-color: #185ADB;
@@ -2393,9 +2432,10 @@ footer > p{
     }   
  
     div.info > p {
-        text-align: justify;
-        margin-top: 30%;
-        width: 115%;
+        text-align: left;
+        margin-top: 45%;
+        margin-left: -40%;
+        width: 200%;
     }
 
     body > main > section > aside > ul > li:first-child {
@@ -2532,14 +2572,31 @@ footer > p{
         margin-top: 50%;
     }
 
+    body > main > section.experience > div.block-education > div.block-02 > p, 
+    body > main > section.experience > div.block-education > div.block-02 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-work > div.block-03 > p, 
+    body > main > section.experience > div.block-work > div.block-03 > span {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    body > main > section.experience > button > i {
+        margin-left: 50%;
+    }
+
     body > main > section.experience > button.education {
-        margin-left: -35%;
         display: inline-block;
+        width: 30%;
     }
 
     body > main > section.experience > button.work {
-        margin-left: 7%;
         display: inline-block;
+        width: 30%;
+        margin-left: 35%;
         margin-top: 12%;
         margin-bottom: 12%;
     }
