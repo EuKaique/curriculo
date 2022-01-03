@@ -2117,10 +2117,14 @@ footer > p{
         font-size: 1.3rem;
         margin-top: 60%;
         line-height: 0.1rem;
-        width: 100%;
+        width: 110%;
         text-align: center;
     }
-    
+
+    body > main > section > div.info > h4 {
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
  
     div.info > p {
         text-align: center;
@@ -2381,6 +2385,7 @@ footer > p{
 }
 
 @media screen and (min-width: 350px) and (max-width: 399px){
+
     .info > h1{
         width: 125%; 
         margin-left: -10%;
@@ -2422,7 +2427,7 @@ footer > p{
         font-size: 1rem;
         margin-top: 120%;
         line-height: 0.1rem;
-        width: 100%;
+        width: 125%;
         text-align: center;
     }
 
