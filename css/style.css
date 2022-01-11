@@ -101,37 +101,45 @@ body > header{
 body > header > nav > div{
     padding: 1.2rem 7rem 1.2rem 5rem;
     background-color: inherit;
+    border-bottom: 1px solid #dde0e796;
+    box-shadow: 0 0 .5em #a6a7aa;
     color: inherit;
 }
 
 body > header > nav > div > ul{
     list-style: none;
-    display: flex;
-    margin-left: 55%;
-    position: relative;
-    margin-top: -1.2rem;
+    text-align: right;
+    float: right;
+    margin-top: -1rem;
 }
 
 body > header > nav > div > ul > li{
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 500;
     margin-right: 1rem;
     color: inherit;
     cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 body > header > nav > div > ul > li > a{
     text-decoration: none;
     color: inherit;
+    padding: 0 0 .5rem 0;
 }
 
 body > header > nav > div > ul > li > a.active{
-    color: #185ADB;
+    color: inherit;
+    border-bottom: 5px solid #185ADB;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 body > header > nav > div > ul > li > a:hover{
-    color: #185ADB;
-    transition-delay: .2s;
+    transition-delay: .1s;
+    border-bottom: 5px solid #185ADB;
+    border-radius: 5px;
 }
 
 .change-theme:hover{
@@ -140,7 +148,11 @@ body > header > nav > div > ul > li > a:hover{
 
 /* MENU PRINCIPAL */
 body > main{
-    padding: 1.2rem 7rem 1.2rem 5rem;
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+#home{
+    height: 400px;
 }
 
 body > main > section > aside{
@@ -189,10 +201,10 @@ body > main > section > div.columns{
 
 body > main > section > div.info{
     display: inline-block;
-    width: 48%;
+    width: 52%;
     margin-left: 5%;
-    margin-top: -10rem;
-    margin-bottom: 30rem;
+    margin-top: auto;
+    margin-bottom: 10rem;
 }
 
 body > main > section > div.info > h1{
@@ -224,9 +236,7 @@ body > main > section > div.image > img{
 }
 
 body > main > section > a{
-    position: absolute;
-    display: block;
-    margin-top: -400px;
+    position: relative;
     margin-left: 75px;
     background-color: #185ADB;
     border-color: transparent;
@@ -244,24 +254,26 @@ body > main > section > a:hover{
 
 /* SEÇÃO SOBRE MIM */
 body > main > section.about{
-    height: 500px;
+    height: 700px;
     margin-top: 0; 
 }
 
 body > main > section.about > h2{
     text-align: center;
     text-transform: uppercase;
+    margin-top: 25rem;
 }
 
 body > main > section.about > p{
     text-align: center;
+    margin-bottom: 8rem;
 }
 
 body > main > section.about > div.grid-about{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 3%;
-    padding: 0 1rem 0 10rem;
+    margin-top: auto;
+    padding: 0 1rem 0 5rem;
 }
 
 body > main > section.about > div.grid-about > div.grid-about-left{
@@ -277,7 +289,7 @@ body > main > section.about > div.grid-about > div.grid-about-left > img{
 }
 
 body > main > section.about > div.grid-about > div.grid-about-right{
-    width: 110%;
+    width: 100%;
 }
 
 body > main > section.about > div.grid-about > div.grid-about-right > p{
@@ -309,13 +321,13 @@ body > main > section.about > div.grid-about > div.grid-about-right > div.grid-a
     font-size: .9rem;
 }
 
-body > main > section.about > div.grid-about > div.grid-about-right > a{
+body > main > section.about > div.grid-about > div.grid-about-right > a {
     display: block;
-    margin-top: 10px;
+    margin-top: 3.5rem;
     margin-left: 0px;
     background-color: #185ADB;
     border-color: transparent;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     font-size: 1rem;
     padding: .8rem 1rem;
 }
@@ -336,8 +348,8 @@ body > main > section.about > div.grid-about > div.grid-about-right > a:hover{
 
 /* SEÇÃO SKILLS */
 body > main > section.skills{
-    height: 500px;
-    margin-top: 0; 
+    height: 700px;
+    margin-top: 7rem; 
 }
 
 body > main > section.skills > h2{
@@ -347,6 +359,7 @@ body > main > section.skills > h2{
 
 body > main > section.skills > p{
     text-align: center;
+    margin-bottom: 5rem;
 }
 .skills__container{
     row-gap: 0;
@@ -471,14 +484,14 @@ body > main > section.skills > p{
 }
 
 .skills__content:first-child{
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 0;
 }
 
 /* SEÇÃO EXPERIENCE */
 body > main > section.experience{
-    height: 500px;
-    margin-top: 0;
+    height: 700px;
+    margin-top: auto;
 }
 
 body > main > section.experience > h2,
@@ -523,7 +536,7 @@ body > main > section.experience > button > i{
 }
 
 body > main > section.experience > div.block-education{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 body > main > section.experience > div.block-education > div.block-01{
@@ -678,7 +691,7 @@ body > main > section.experience > div.block-work > div.block-03 > span > i{
 
 /* SERVICES */
 body > main > section.services{
-    height: 500px;
+    height: 700px;
     margin-top: 0;
 }
 
@@ -867,8 +880,19 @@ body > main > section.services > div.services-flex > div.service > a > i:hover{
 }
 
 .portfolio{
-    height: 500px;
-    margin-top: 3rem;
+    height: 700px;
+    margin-top: auto;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9rem !important;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
 }
 
 .swiper-button-prev::after,
@@ -914,8 +938,8 @@ body > main > section.services > div.services-flex > div.service > a > i:hover{
 /* SEÇÃO CONTATO */
 
 body > main > section.contato{
-    height: 550px;
-    margin-top: 0;
+    height: 700px;
+    margin-top: auto;
 }
 
 body > main > section.contato > h2{
@@ -927,11 +951,11 @@ body > main > section.contato > p{
     text-align: center;
 }
 
-body > main > section.contato > div.grid-contato{
+body > main > section.contato > div.grid-contato {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 5rem;
-    margin-top: 5%;
+    margin-top: 12%;
 }
 
 body > main > section.contato > div.grid-contato > div.contato-left > ul{
@@ -961,7 +985,7 @@ body > main > section.contato > div.grid-contato > div.contato-right > form{
 
 body > main > section.contato > div.grid-contato > div.contato-right > form > input{
     background-color: #2767e715;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.6rem;
     border: none;
     border-radius: .5rem;
     color: #121212;
@@ -2085,6 +2109,23 @@ footer > p{
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px){
+    #menu {
+        display: block !important;
+        font-size: 1.75em;
+        color: #185ADB;
+        position: absolute;
+        right: 2.5em;
+        top: 0.9em;
+    }
+
+    body > main > section > div.info {
+        display: block;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -15rem;
+        margin-bottom: 35rem;
+    }
+
     body > header > nav > div > ul > li > a.active{
         color: rgba(0,0,150,0.5);
     }
@@ -2115,9 +2156,9 @@ footer > p{
 
     body > main > section > div.info > h1 {
         font-size: 1.3rem;
-        margin-top: 60%;
+        margin-top: 30%;
         line-height: 0.1rem;
-        width: 110%;
+        width: 100%;
         text-align: center;
     }
 
@@ -2166,8 +2207,9 @@ footer > p{
     body > main > section > a {
         position: absolute;
         display: block;
-        margin-top: -400px;
-        margin-left: 12%;
+        margin-top: -31rem;
+        margin-left: 5%;
+        width: 15rem;
         background-color: #185ADB;
         border-color: transparent;
         border-radius: 0.8rem;
@@ -2175,6 +2217,7 @@ footer > p{
         padding: 0.8rem 1rem;
         color: #FEFEFE;
         text-decoration: none;
+        text-align: center;
     }
 
     body > main > section.about {
@@ -2182,18 +2225,28 @@ footer > p{
         margin-top: -100%;
     }
 
+    body > main > section.about > div.grid-about > div.grid-about-left > img {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 3rem;
+        box-shadow: rgb(0 0 0 / 50%) 0px 15px 15px;
+    }
+
     body > main > section.about > div.grid-about > div.grid-about-left {
         width: 100%;
         display: block;
-        margin-left: 4%;
-        margin-bottom: 5%;
-        margin-top: 12%;
+        margin-left: 12%;
+        margin-bottom: 6%;
+        margin-top: auto;
     }
 
     body > main > section.about > div.grid-about > div.grid-about-right > p {
-        text-align: justify;
-        font-size: .9rem;
+        /*
+        text-align: center;
+        font-size: 1rem;
         width: 100%;
+        */
+        display: none;
     }
 
     body > main > section.about > div.grid-about > div.grid-about-right > div.grid-about-right-01,
@@ -2229,6 +2282,11 @@ footer > p{
         margin-top: 100%;
     }
 
+    .skills__container {
+        width: 93%;
+        margin-left: 0%;
+    }
+
     .skills__content:first-child {
         margin-left: 5%;
         margin-top: 0;
@@ -2249,11 +2307,11 @@ footer > p{
 
     body > main > section.experience {
         height: auto;
-        margin-top: 50%;
+        margin-top: 65%;
     }
 
     body > main > section.experience > button > i {
-        margin-left: 65%;
+        margin-left: 38%;
     }
     
     body > main > section.experience > button.education {
@@ -2285,12 +2343,12 @@ footer > p{
         border-bottom-left-radius: 1rem;
     }
 
-    body > main > section.experience > div.block-work > div.block-01,
-    body > main > section.experience > div.block-work > div.block-02,
+    body > main > section.experience > div.block-work > div.block-01, 
+    body > main > section.experience > div.block-work > div.block-02, 
     body > main > section.experience > div.block-work > div.block-03 {
         height: 100px;
-        width: 168%;
-        margin-left: -25%;
+        width: 100%;
+        margin-left: 0%;
         margin-top: 12%;
         padding: 0px 10px;
         line-height: 1.6rem;
@@ -2302,6 +2360,46 @@ footer > p{
         border-bottom-left-radius: 1rem;
     }
 
+    div.block-education > div.block-03 > p{
+        margin-left: 0%;
+    }
+
+    body > main > section.experience > div.block-education > div.block-01 > p, 
+    body > main > section.experience > div.block-education > div.block-01 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-education > div.block-02 > p, 
+    body > main > section.experience > div.block-education > div.block-02 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-education > div.block-03 > p, 
+    body > main > section.experience > div.block-education > div.block-03 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-work > div.block-01 > p, 
+    body > main > section.experience > div.block-work > div.block-01 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-work > div.block-02 > p, 
+    body > main > section.experience > div.block-work > div.block-02 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    body > main > section.experience > div.block-work > div.block-03 > p, 
+    body > main > section.experience > div.block-work > div.block-03 > span {
+        font-size: 13px;
+        text-align: center;
+    }
+
     body > main > section.services {
         height: auto;
         margin-top: 100%;
@@ -2311,16 +2409,16 @@ footer > p{
         display: flex;
         flex-wrap: wrap;
         margin-top: 3%;
-        width: 140%;
+        width: 100%;
     }
 
-    body > main > section.services > div.services-flex > div.service:nth-child(1),
-    body > main > section.services > div.services-flex > div.service:nth-child(2),
+    body > main > section.services > div.services-flex > div.service:nth-child(1), 
+    body > main > section.services > div.services-flex > div.service:nth-child(2), 
     body > main > section.services > div.services-flex > div.service:nth-child(3) {
         margin-top: 12%;
-        margin-left: -10%;
+        margin-left: 0%;
         width: 100%;
-        padding: 2rem 0rem;
+        padding: 3rem 0rem;
     }
 
     body > main > section.services > div.services-flex > div.service > h4 {
@@ -2370,8 +2468,20 @@ footer > p{
     }
 
     .contato-right {
-        width: 210%;
-        margin-left: -50%;
+        width: 100%;
+        margin-left: -6%;
+    }
+
+    body > main > section.contato > div.grid-contato {
+        display: block;
+        padding: 0;
+        margin-top: 15%;
+        width: 80vw;
+    }
+
+    body > main > section.contato > div.grid-contato > div.contato-left > ul {
+        list-style: none;
+        margin-left: 14%;
     }
 
     footer > div.grid-rodape > div.grid-rodape-left {
