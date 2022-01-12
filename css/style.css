@@ -2565,7 +2565,7 @@ footer > p{
         margin-top: 120%;
         margin-left: auto;
         line-height: 0.1rem;
-        width: 112%;
+        width: 125%;
         text-align: center;
     }
 
@@ -2864,8 +2864,8 @@ footer > p{
     }
 
     .contato-right {
-        width: 210%;
-        margin-left: -50%;
+        width: 150%;
+        margin-left: -23%;
     }
 
     footer > div.grid-rodape > div.grid-rodape-left {
@@ -2880,6 +2880,5 @@ footer > p{
     footer > div.grid-rodape > div.grid-rodape-center {
         margin-left: 4%;
     }
-    
     
 }
