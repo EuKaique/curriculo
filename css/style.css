@@ -2563,7 +2563,7 @@ footer > p{
     body > main > section > div.info > h1 {
         font-size: 1.5rem;
         margin-top: 120%;
-        margin-left: 1%;
+        margin-left: auto;
         line-height: 0.1rem;
         width: 100%;
         text-align: center;
