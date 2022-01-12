@@ -2730,7 +2730,7 @@ footer > p{
     }
 
     body > main > section.experience > button > i {
-        margin-left: 50%;
+        margin-left: 15%;
     }
 
     body > main > section.experience > button.education {
@@ -2750,7 +2750,7 @@ footer > p{
     body > main > section.experience > div.block-education > div.block-02, 
     body > main > section.experience > div.block-education > div.block-03 {
         height: 100px;
-        width: 135%;
+        width: 120%;
         margin-left: -10%;
         margin-top: 12%;
         padding: 0px 10px;
@@ -2768,12 +2768,12 @@ footer > p{
         text-align: center;
     }
 
-    body > main > section.experience > div.block-work > div.block-01,
-    body > main > section.experience > div.block-work > div.block-02,
+    body > main > section.experience > div.block-work > div.block-01, 
+    body > main > section.experience > div.block-work > div.block-02, 
     body > main > section.experience > div.block-work > div.block-03 {
         height: 100px;
-        width: 168%;
-        margin-left: -25%;
+        width: 135%;
+        margin-left: -18%;
         margin-top: 12%;
         padding: 0px 10px;
         line-height: 1.6rem;
@@ -2787,14 +2787,14 @@ footer > p{
 
     body > main > section.services {
         height: auto;
-        margin-top: 100%;
+        margin-top: 30%;
     }
 
     body > main > section.services > div.services-flex {
         display: flex;
         flex-wrap: wrap;
         margin-top: 3%;
-        width: 140%;
+        width: 120%;
     }
 
     body > main > section.services > div.services-flex > div.service:nth-child(1),
@@ -2830,23 +2830,84 @@ footer > p{
         text-align: center;
     }
 
+    .portfolio {
+        height: auto;
+        margin-top: 5rem;
+    }
+
     .swiper {
-        margin-left: -39% !important;
+        margin-left: auto;
         margin-right: auto;
+        margin-top: -3% !important;
         position: relative;
         overflow: hidden;
         list-style: none;
         padding: 0;
         z-index: 1;
-        width: 190% !important;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        top: 41% !important;
+        margin-left: 7% !important;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+
+    .swiper-button-next{
+        right: 10px;
+        left: 61% !important;
+    }
+
+    .swiper-button-next{
+        position: absolute;
+        top: 41% !important;
+        margin-left: 17% !important;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
     }
     
     .portfolio__img {
-        width: 145px;
-        height: 145px;
+        width: 225px;
+        height: 175px;
         border-radius: 0.5rem;
-        margin-left: 9%;
-        margin-top: 20%;
+        margin-left: 16%;
+        margin-top: 0%;
+    }
+
+    .portfolio__button {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        background-color: #185ADB;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        text-align: right;
+        margin-left: -39%;
+        margin-top: 6%;
+        position: absolute;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets, 
+    .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 10px;
+        left: -15px !important;
+        width: 100%;
     }
 
     body > main > section.contato {
