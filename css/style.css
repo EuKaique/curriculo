@@ -1817,6 +1817,15 @@ footer > p{
 }
 
 @media screen and (max-width: 400px){
+    #menu {
+        display: block !important;
+        font-size: 1.75em;
+        color: #185ADB;
+        position: absolute;
+        right: 2.5em;
+        top: .9em;
+    }
+
     body > header > nav > div > ul > li > a.active{
         color: rgba(0,0,150,0.5);
     }
@@ -2494,7 +2503,25 @@ footer > p{
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 399px){
+@media screen and (min-width: 350px) and (max-width: 414px){
+    #home{
+        height: 500px;
+    }
+
+    #menu {
+        display: block !important;
+        font-size: 1.75em;
+        color: #185ADB;
+        position: absolute;
+        right: 1.5em;
+        top: .9em;
+    }
+
+    body > main > section > aside {
+        margin-top: 40%;
+        position: relative;
+        display: block;
+    }
 
     .info > h1{
         width: 125%; 
@@ -2534,23 +2561,23 @@ footer > p{
     }
 
     body > main > section > div.info > h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-top: 120%;
+        margin-left: 1%;
         line-height: 0.1rem;
-        width: 125%;
+        width: 100%;
         text-align: center;
     }
 
     body > main > section > div.info > h4 {
-        line-height: 1rem;
-        margin-top: 20%;
+        display: none;
     }   
  
     div.info > p {
         text-align: left;
-        margin-top: 45%;
-        margin-left: -40%;
-        width: 200%;
+        margin-top: 30%;
+        margin-left: 0%;
+        width: 100%;
     }
 
     body > main > section > aside > ul > li:first-child {
@@ -2588,7 +2615,7 @@ footer > p{
     body > main > section > a {
         position: absolute;
         display: block;
-        margin-top: -450px;
+        margin-top: -400px;
         margin-left: 5%;
         background-color: #185ADB;
         border-color: transparent;
