@@ -2620,7 +2620,7 @@ footer > p{
     body > main > section > a {
         position: absolute;
         display: block;
-        margin-top: -400px;
+        margin-top: -500px;
         margin-left: 5%;
         background-color: #185ADB;
         border-color: transparent;
@@ -2937,12 +2937,12 @@ footer > p{
     }
 
     footer > div.grid-rodape > div.grid-rodape-right {
-        margin-left: -125%;
+        margin-left: -108%;
         margin-top: 30%;  
     }
 
     footer > div.grid-rodape > div.grid-rodape-center {
-        margin-left: 4%;
+        margin-left: 14%;
     }
     
 }
