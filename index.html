@@ -4,416 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/man.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">   
-    <script src="https://kit.fontawesome.com/9def1a7c03.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Kaique &reg;</title>
+    <link rel="icon" href="assets/img/man.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--BOX ICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body id="fundo" onload="EducationSet()" class="dark-theme">
-    <header id="header-fundo">
-        <nav id="nav-fundo" class="nav-menu">
-            <div class="nav-container">
-                <h5 class="nav-h4">KAIQUE</h5>
-                <i id="menu" class="fas fa-bars btn-menumobile"></i>
-                <ul id="nav-items">
-                    <li><a class="nav-item active" href="#home">Inicio</a></li>
-                    <li><a class="nav-item" href="#about">Sobre</a></li>
-                    <li><a class="nav-item" href="#skills">Habilidades</a></li>
-                    <li><a class="nav-item" href="#experience">Experiência</a></li>
-                    <li><a class="nav-item" href="#services">Serviços</a></li>
-                    <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-item" href="#contato">Contato</a></li>
-                    <li><i class="far fa-moon change-theme" id="theme-button"></i></li>
+<body>
+    <!--HEADER-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav__logo">Kaique</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Experiência</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Trabalhos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
                 </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <aside>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/EuKaique" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/kaique_o_s/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </aside>
-            <div class="info">
-                <h1>Olá, seja <b>bem vindo(a)!</b></h1>
-                <h4>Uma breve apresentação sobre mim</h4>
-                <p>Experiência com desenvolvimento web, criação de estruturas html, estilos css e interações em javascript e JQuery. PHP como back-end e banco de dados MySQL</p>    
+
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Oi, <br>eu sou o <span class="home__title-color">Kaique.</span><br>Analista programador</h1>
+                <a href="#" class="button">Contato</a>
             </div>
-            <div class="image" id="image">
-                <img src="img/kaique.jpg" alt="Currículo Web Kaique">
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/EuKaique" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank" class="home__social-icon"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/kaique_o_s/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
             </div>
-            <a href="https://wa.me/5511952422368">Fale comigo <i class="far fa-paper-plane"></i></a>
+            <div class="home__img">
+                <img src="assets/img/perfil.png" alt="Perfil">
+            </div>
         </section>
-        <section id="about" class="about">
-            <h2>Sobre mim</h2>
-            <p>Introdução</p>
-            <div class="grid-about">
-                <div class="grid-about-left">
-                    <img src="img/sobre-mim.jpg" alt="Sobre mim">
+        <!-- SOBRE MIM -->
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/sobre.jpg" alt="Sobre mim">
                 </div>
-                <div class="grid-about-right">
-                    <p>Analista programador, autodidata com alguns anos de experiência, 
-                        hobbies: futebol, jogos, músicas, livros, filmes e séries.
-                    </p>
-                    <div class="grid-about-right-01">
-                        <span>02+</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                    <div class="grid-about-right-02">
-                        <span>20+</span>
-                        <p>Projetos</p>
-                    </div>
-                    <div class="grid-about-right-03">
-                        <span>03+</span>
-                        <p>Empresas que trabalhei</p>
-                    </div>
-                    <a href="pdf/Kaique.pdf" download="Curriculo_Kaique">Currículo <i class="fas fa-download"></i></a>
+                <div>
+                    <h2 class="about__subtitle">Quem sou eu?</h2>
+                    <p class="about__text">Autodidata, sempre em busca do conhecimento. Amo essa área(programação). Quando não estou programando, estou fazendo atividades na igreja, entre amigos e queridos, praticando alguma atividade fisica, ou assistindo algum vídeo, série ou filme</p>
                 </div>
             </div>
         </section>
+        <!-- EXPERIÊNCIA -->
         <section class="skills section" id="skills">
-            <h2>Habilidades</h2>
-            <p>Meu nível técnico</p>
-            <div class="skills__container container grid">
-                <!--FRONT-END-->
-                <div class="skills__content skills__open skills__close">
-                    <div class="skills__header">
-                        <i class="fas fa-code skills__icon"></i>
+            <h2 class="section-title">Experiência</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Nivel técnico</h2>
+                    <p class="skills__text">Abaixo um percentual de conhecimento, para cada linguagem que já trabalhei</p>
+                    <br>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML</span>
+                        </div>
                         <div>
-                            <h1 class="skills__title">Frontend</h1>
-                            <p class="skills__subtitle">Mais de 2 anos</p>
+                            <span class="skills__percentage">93%</span>
                         </div>
-                        <i class="fas fa-chevron-down skills__arrow"></i>
+                        <div class="skills__bar skills__html"></div>
                     </div>
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">HTML</h3>
-                                <span class="skills_number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__html"></span>
-                            </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
-                                <span class="skills__number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__css"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">JavaScript</h3>
-                                <span class="skills__number">70%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__js"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">React</h3>
-                                <span class="skills__number">65%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--BACK-END-->
-                <div class="skills__content skills__open skills__close">
-                    <div class="skills__header">
-                        <i class="fas fa-server skills__icon"></i>
                         <div>
-                            <h1 class="skills__title">Backend</h1>
-                            <p class="skills__subtitle">Mais de 1 ano</p>
+                            <span class="skills__percentage">81%</span>
                         </div>
-                        <i class="fas fa-chevron-down skills__arrow"></i>
+                        <div class="skills__bar skills__css"></div>
                     </div>
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">PHP</h3>
-                                <span class="skills_number">82%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__php"></span>
-                            </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JavaScript</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">MySQL</h3>
-                                <span class="skills__number">85%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__mysql"></span>
-                            </div>
+                        <div>
+                            <span class="skills__percentage">74%</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Node</h3>
-                                <span class="skills__number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__node"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Python</h3>
-                                <span class="skills__number">65%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__python"></span>
-                            </div>
-                        </div>
+                        <div class="skills__bar skills__js"></div>
                     </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-php skills__icon'></i>
+                            <span class="skills__name">PHP</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                        <div class="skills__bar skills__php"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-data skills__icon'></i>
+                            <span class="skills__name">DataBase</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                        <div class="skills__bar skills__database"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/img/work1.jpg" alt="" class="skills__img">
                 </div>
             </div>
         </section>
-        <section id="experience" class="experience">
-            <h2>Experiência</h2>
-            <p>Minha jornada pessoal</p>
-            <button class="education" id="education" onclick="MostraEducation()"><i class="fas fa-book-reader"></i>Educação</button>
-            <button class="work" id="experience" onclick="MostraWork()"><i class="fas fa-briefcase"></i>Trabalhos</button>
-            <div class="block-education" id="block-education">
-                <div class="block-01">
-                    <h4>Ensino Médio</h4>
-                    <p>E.E. José Lins do Rego</p>
-                    <span><i class="far fa-calendar-alt"></i>2011-2013</span>
+        <!-- TRABALHOS -->
+        <section class="work section" id="work">
+            <h2 class="section-title">Trabalhos</h2>
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <a href="https://eukaique.github.io/Ecommerce/" target="_blank"><img src="assets/img/trabalho01.PNG" alt="Ecommerce"></a>
                 </div>
-                <div class="block-02">
-                    <h4>Ensino Superior</h4>
-                    <p>Universidade paulista - UNIP</p>
-                    <span><i class="far fa-calendar-alt"></i>2014-2017</span>
+                <div class="work__img">
+                    <a href="https://eukaique.github.io/Agencia-servicos/" target="_blank"><img src="assets/img/trabalho02.PNG" alt="Agencia-servicos"></a>
                 </div>
-                <div class="block-03">
-                    <h4>Cursos de programação</h4>
-                    <p>Udemy e Youtube</p>
-                    <span><i class="far fa-calendar-alt"></i>2019-2021</span>
+                <div class="work__img">
+                    <a href="https://eukaique.github.io/Despertador-JS/" target="_blank"><img src="assets/img/trabalho03.PNG" alt="Despertador javascript"></a>
                 </div>
-            </div>
-            <div class="block-work" id="block-work">
-                <div class="block-01">
-                    <h4>Auxiliar administrativo</h4>
-                    <p>CIM Gestão e Informação ltda.</p>
-                    <span><i class="far fa-calendar-alt"></i>07/2014-12/2014</span>
+                <div class="work__img">
+                    <a href="https://eukaique.github.io/Calculadora-IMC-javascript/" target="_blank"><img src="assets/img/trabalho04.PNG" alt="Calculadora IMC"></a>
                 </div>
-                <div class="block-02">
-                    <h4>Analista de sistemas jr</h4>
-                    <p>SSI Soluções em Sistemas da Informação ltda.</p>
-                    <span><i class="far fa-calendar-alt"></i>04/2018-06/2018</span>
+                <div class="work__img">
+                    <a href="https://eukaique.github.io/Media-aluno/" target="_blank"><img src="assets/img/trabalho05.PNG" alt="Media do aluno"></a>
                 </div>
-                <div class="block-03">
-                    <h4>Analista programador jr</h4>
-                    <p>Tesis Tecnologia e Qualidade em Engenharia ltda.</p>
-                    <span><i class="far fa-calendar-alt"></i>Atualmente</span>
+                <div class="work__img">
+                    <a href="https://localizador-github-hk7c78yzt-eukaique.vercel.app/" target="_blank"><img src="assets/img/trabalho06.PNG" alt="Localiza Github"></a>
                 </div>
             </div>
         </section>
-        <section id="services" class="services">
-            <h2>Serviços</h2>
-            <p>O que você precisa?</p>
-            <div class="services-flex">
-                <div class="service">
-                    <i class="far fa-window-restore"></i>
-                    <h4>Criação de sites</h4>
-                    <a href="#services" id="link1" class="services__button">Saiba mais <i class="fas fa-arrow-right"></i></a>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4>Criação de sites</h4>
-                            <i class="fas fa-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Sites bonitos e modernos</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Para todos os dispositivos</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Ótima experiência de navegação</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>SEO otimizado</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="service">
-                    <i class="fas fa-server"></i>
-                    <h4>Sistemas CRUD</h4>
-                    <a href="#services" id="link2" class="services__button">Saiba mais <i class="fas fa-arrow-right"></i></a>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4>Sistemas CRUD</h4>
-                            <i class="fas fa-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Seleção de dados</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Atualize quando quiser</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Crie coisas novas</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Apague o que não vai precisar</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="service">
-                    <i class="fab fa-wpforms"></i>
-                    <h4>Formulários</h4>
-                    <a href="#services" id="link3" class="services__button">Saiba mais <i class="fas fa-arrow-right"></i></a>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4>Formulários</h4>
-                            <i class="fas fa-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Formulários elegantes</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Para todos os dispositivos</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Personalize como quiser</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="far fa-check-circle services__modal-icon"></i>
-                                    <p>Totalmente dinâmico</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="portfolio">
-            <h2>Portfolio</h2>
-            <p>Trabalhos recentes</p>
-            <div class="portfolio__container container swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="img/portfolio-03.PNG" alt="portfolio 1" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Ecommerce</h3>
-                            <p class="portfolio__description">Modelo de um ecommerce moderno</p>
-                            <a href="https://eukaique.github.io/Ecommerce/" target="_blank" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right button__icon"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="img/portfolio-01.PNG" alt="portfolio 2" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Agência de serviços</h3>
-                            <p class="portfolio__description">Uma agência pensada para você</p>
-                            <a href="https://eukaique.github.io/Agencia-servicos/" target="_blank" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right button__icon"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="img/portfolio-02.PNG" alt="portfolio 3" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Localiza Github</h3>
-                            <p class="portfolio__description">Pesquise por qualquer usuário do github</p>
-                            <a href="https://localizador-github-github-finder-qxci5srbf-eukaique.vercel.app/" target="_blank" class="button button--flex button-small portfolio__button">Acessar <i class="fas fa-arrow-right button__icon"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--Botões de voltar e avançar-->
-                <div class="swiper-button-next"><i class="fas fa-chevron-right swiper-portfolio-icon"></i></div>
-                <div class="swiper-button-prev"><i class="fas fa-chevron-left swiper-portfolio-icon"></i></div>
-                <!--Paginação do slide-->
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-        <section id="contato" class="contato">
-            <h2>Contato</h2>
-            <p>Envie sua mensagem</p>
-            <div class="grid-contato">
-                <div class="contato-left">
-                    <ul>
-                        <li>
-                            <i class="fab fa-whatsapp"></i>
-                            <h4>Celular</h4>
-                            <span>(11)95242-2368</span>
-                        </li>
-                        <li>
-                            <i class="far fa-envelope"></i>
-                            <h4>Email</h4>
-                            <span>kaiqueols75@gmail.com</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contato-right">
-                    <form action="#" method="post">
-                        <input type="text" name="nome" id="nome" placeholder="nome">
-                        <input type="email" name="email" id="email" placeholder="email@email.com">
-                        <input type="text" name="assunto" id="assunto" placeholder="assunto">
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva aqui sua mensagem..."></textarea>
-                        <button>Enviar <i class="far fa-paper-plane"></i></button>
-                    </form>
-                </div>
+        <!-- CONTATO -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact__container bd-grid">
+                <form action="#" class="contact__form">
+                    <input type="text" placeholder="Nome" class="contact__input">
+                    <input type="e-mail" placeholder="E-mail" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="20" class="contact__input" placeholder="Mensagem"></textarea>
+                    <input type="button" value="Enviar" class="contact__button button">
+                </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="grid-rodape">
-            <div class="grid-rodape-left">
-                <h2>Kaique</h2>
-                <h4>Analista programador</h4>
-            </div>
-            <div class="grid-rodape-center">
-                <ul>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-            <div class="grid-rodape-right">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/EuKaique" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/kaique_o_s/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
+    <!--RODAPÉ-->
+    <footer class="footer">
+        <p class="footer__title">Kaique</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/kaique_o_s/" class="footer__icon" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" class="footer__icon"><i class='bx bxl-linkedin' target="_blank"></i></a>
         </div>
-        <p>&reg; Kaique Oliveira Santos - 2022</p>
+        <p>&copy; 2022 Todos os direitos reservados</p>
     </footer>
-    <!--SCROLL TOP-->
-    <a href="#" class="scrollup" id="scroll-up"><i class="fas fa-arrow-up scrollup__icon"></i></a>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--MAIN JS-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
