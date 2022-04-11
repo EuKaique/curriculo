@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap');
 /* VARIÁVEIS CSS */
 :root{
     --header-height: 3rem;
@@ -8,11 +8,11 @@
 /* CORES */
 :root{
     --first-color: #4070F4;
-    --second-color: #0E2431;
+    --second-color: #23516b;
 }
 /* FONTES */
 :root{
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Anek Tamil', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -176,9 +176,21 @@ img{
     top: 2rem;
     background-color: var(--first-color);
 }
+#alterar-cores{
+    background-color: transparent;
+    color: var(--second-color);
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
 /* MOSTRAR MENU */
 .show{
     right: 0;
+}
+
+.inverter{
+    background-color: #000;
+    color: #FFFFFF;
 }
 
 /* INICIO */
@@ -290,16 +302,19 @@ img{
     width: 96%;
 }
 .skills__css{
-    width: 84%;
+    width: 87%;
 }
 .skills__js{
-    width: 78%;
+    width: 82%;
 }
 .skills__php{
-    width: 72%;
+    width: 75%;
 }
 .skills__database{
-    width: 82%;
+    width: 85%;
+}
+.skills__git{
+    width: 85%;
 }
 .skills__img{
     border-radius: .5rem;
@@ -345,6 +360,32 @@ img{
     font-size: var(--normal-font-size);
     cursor: pointer;
     margin-left: auto;    
+}
+.experience__container{
+    border-radius: .5rem;
+    border: 1.5px solid var(--second-color);
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+.experience__container h3,
+.experience__container h4,
+.experience__container span,
+.experience__container p{
+    text-align: center;
+}
+
+.course__container{
+    border-bottom: 1.5px solid var(--second-color);
+}
+
+.course__container a{
+    text-decoration: none;
+    color: var(--second-color);
+    display: flex;
+}
+
+.course__container h3{
+    margin-left: 1rem;
 }
 
 /* RODAPÉ */
