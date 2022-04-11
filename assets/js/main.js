@@ -1,3 +1,20 @@
+/* ALTERAR CORES */
+const cores = (toggleId, novaCor) => {
+    const toggle = document.getElementById(toggleId),
+    corBody = document.querySelector(novaCor);
+    corHeader = document.querySelector(novaCor);
+
+    if(toggle && corBody){
+        toggle.addEventListener('click', () => {
+            corBody.classList.toggle('inverter');
+            corHeader.classList.toggle('inverter');
+        });
+    }
+
+}
+cores('alterar-cores','body');
+cores('alterar-cores','header');
+
 /* MOSTRAR MENU */
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
@@ -53,5 +70,8 @@ sr.reveal('.skills__img',{delay: 400});
 /* SCROLL PORTFOLIO */
 sr.reveal('.work__img',{interval: 200});
 
-/* SCROLL CONTATO */
-sr.reveal('.contact__input',{interval: 200});
+/* SCROLL EXPERIÊNCIA */
+sr.reveal('.experience__container',{interval: 200});
+
+/* SCROLL CURSOS */
+sr.reveal('.course__container',{interval: 200});
