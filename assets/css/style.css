@@ -178,7 +178,7 @@ img{
 }
 #alterar-cores{
     background-color: transparent;
-    color: var(--second-color);
+    color: #DEA057;
     border: none;
     font-size: 1.3rem;
     cursor: pointer;
