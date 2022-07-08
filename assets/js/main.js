@@ -2,18 +2,22 @@
 const cores = (toggleId, novaCor) => {
     const toggle = document.getElementById(toggleId),
     corBody = document.querySelector(novaCor);
-    corNav = document.querySelector(novaCor);
+    corHeader = document.querySelector(novaCor);
+    corA = document.querySelector(novaCor);
     
     if(toggle && corBody){
         toggle.addEventListener('click', () => {
             corBody.classList.toggle('inverter');
-            corNav.classList.toggle('inverter');
+            corHeader.classList.toggle('inverter');
+            corA.classList.toggle('inverter');
         });
     }
 
 }
 cores('alterar-cores','body');
-cores('alterar-cores','nav');
+cores('alterar-cores','header');
+cores('alterar-cores','a');
+
 
 /* MOSTRAR MENU */
 const showMenu = (toggleId, navId) => {
