@@ -2,15 +2,18 @@
 const cores = (toggleId, novaCor) => {
     const toggle = document.getElementById(toggleId),
     corBody = document.querySelector(novaCor);
+    corNav = document.querySelector(novaCor);
     
     if(toggle && corBody){
         toggle.addEventListener('click', () => {
             corBody.classList.toggle('inverter');
+            corNav.classList.toggle('inverter');
         });
     }
 
 }
 cores('alterar-cores','body');
+cores('alterar-cores','nav');
 
 /* MOSTRAR MENU */
 const showMenu = (toggleId, navId) => {
