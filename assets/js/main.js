@@ -14,6 +14,7 @@ const cores = (toggleId, novaCor) => {
 }
 cores('alterar-cores','body');
 cores('alterar-cores','header');
+cores('alterar-cores','a');
 
 /* MOSTRAR MENU */
 const showMenu = (toggleId, navId) => {
