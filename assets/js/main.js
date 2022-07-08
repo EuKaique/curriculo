@@ -3,11 +3,13 @@ const cores = (toggleId, novaCor) => {
     const toggle = document.getElementById(toggleId),
     corBody = document.querySelector(novaCor);
     corHeader = document.querySelector(novaCor);
+    corLink = document.querySelector(novaCor);
 
     if(toggle && corBody){
         toggle.addEventListener('click', () => {
             corBody.classList.toggle('inverter');
             corHeader.classList.toggle('inverter');
+            corLink.classList.toggle('inverter');
         });
     }
 
