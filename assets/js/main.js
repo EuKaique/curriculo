@@ -2,27 +2,32 @@
 const cores = (toggleId, novaCor) => {
     const toggle = document.getElementById(toggleId),
     corBody = document.querySelector(novaCor);
+    /*
     corA = document.querySelector(novaCor);
     corH3 = document.querySelector(novaCor);
     corH4 = document.querySelector(novaCor);
     corSpan = document.querySelector(novaCor);
     corP = document.querySelector(novaCor);
     corLink = document.querySelector(novaCor);
+    */
     
     if(toggle && corBody){
         toggle.addEventListener('click', () => {
             corBody.classList.toggle('inverter');
+            /*
             corA.classList.toggle('inverter');
             corH3.classList.toggle('inverter');
             corH4.classList.toggle('inverter');
             corSpan.classList.toggle('inverter');
             corP.classList.toggle('inverter');
             corLink.classList.toggle('inverter');
+            */
         });
     }
 
 }
 cores('alterar-cores','body');
+cores('alterar-cores','header');
 cores('alterar-cores','a');
 cores('alterar-cores','h3');
 cores('alterar-cores','h4');
