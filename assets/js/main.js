@@ -28,12 +28,6 @@ const cores = (toggleId, novaCor) => {
 }
 cores('alterar-cores','body');
 cores('alterar-cores','header');
-cores('alterar-cores','a');
-cores('alterar-cores','h3');
-cores('alterar-cores','h4');
-cores('alterar-cores','p');
-cores('alterar-cores','span');
-cores('alterar-cores','nav__link');
 
 /* MOSTRAR MENU */
 const showMenu = (toggleId, navId) => {
