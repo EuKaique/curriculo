@@ -4,12 +4,22 @@ const cores = (toggleId, novaCor) => {
     corBody = document.querySelector(novaCor);
     corHeader = document.querySelector(novaCor);
     corA = document.querySelector(novaCor);
+    corH1 = document.querySelector(novaCor);
+    corH3 = document.querySelector(novaCor);
+    corSpan = document.querySelector(novaCor);
+    corP = document.querySelector(novaCor);
+    corLink = document.querySelector(novaCor);
     
     if(toggle && corBody){
         toggle.addEventListener('click', () => {
             corBody.classList.toggle('inverter');
             corHeader.classList.toggle('inverter');
             corA.classList.toggle('inverter');
+            corH1.classList.toggle('inverter');
+            corH3.classList.toggle('inverter');
+            corSpan.classList.toggle('inverter');
+            corP.classList.toggle('inverter');
+            corLink.classList.toggle('inverter');
         });
     }
 
@@ -17,7 +27,11 @@ const cores = (toggleId, novaCor) => {
 cores('alterar-cores','body');
 cores('alterar-cores','header');
 cores('alterar-cores','a');
-
+cores('alterar-cores','home__title');
+cores('alterar-cores','h3');
+cores('alterar-cores','p');
+cores('alterar-cores','span');
+cores('alterar-cores','nav__link');
 
 /* MOSTRAR MENU */
 const showMenu = (toggleId, navId) => {
