@@ -2,9 +2,7 @@
 const cores = (toggleId, novaCor) => {
     const toggle = document.getElementById(toggleId),
     corBody = document.querySelector(novaCor);
-    corHeader = document.querySelector(novaCor);
     corA = document.querySelector(novaCor);
-    corH1 = document.querySelector(novaCor);
     corH3 = document.querySelector(novaCor);
     corH4 = document.querySelector(novaCor);
     corSpan = document.querySelector(novaCor);
@@ -14,9 +12,7 @@ const cores = (toggleId, novaCor) => {
     if(toggle && corBody){
         toggle.addEventListener('click', () => {
             corBody.classList.toggle('inverter');
-            corHeader.classList.toggle('inverter');
             corA.classList.toggle('inverter');
-            corH1.classList.toggle('inverter');
             corH3.classList.toggle('inverter');
             corH4.classList.toggle('inverter');
             corSpan.classList.toggle('inverter');
@@ -27,7 +23,6 @@ const cores = (toggleId, novaCor) => {
 
 }
 cores('alterar-cores','body');
-cores('alterar-cores','header');
 cores('alterar-cores','a');
 cores('alterar-cores','h3');
 cores('alterar-cores','h4');
