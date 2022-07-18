@@ -8,7 +8,7 @@
 /* CORES */
 :root{
     --first-color: #4070F4;
-    --second-color: #23516b;
+    --second-color: #001E6C;
 }
 /* FONTES */
 :root{
@@ -216,7 +216,7 @@ img{
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--second-color);
 }
 .home__social-icon:hover{
     color: #DEA057;
@@ -390,7 +390,7 @@ img{
 
 /* RODAPÉ */
 .footer{
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     color: #FFF;
     text-align: center;
     padding: 2rem 0;
@@ -440,7 +440,7 @@ img{
         display: none;
     }
     .nav__link{
-        color: var(--first-color);
+        color: var(--second-color);
     }
     .home{
         height: 100vh;
