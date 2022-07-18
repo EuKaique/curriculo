@@ -9,6 +9,7 @@
 :root{
     --first-color: #4070F4;
     --second-color: #001E6C;
+    --text-color: #2C3333;
 }
 /* FONTES */
 :root{
@@ -99,6 +100,7 @@ img{
 .about__text{
     font-size: 1.3rem;
     text-align: center;
+    color: var(--text-color);
 }
 
 /* LAYOUT */
@@ -160,7 +162,7 @@ img{
     background-color: var(--first-color);
 }
 .nav__logo{
-    color: var(--first-color);
+    color: var(--second-color);
 }
 .nav__toggle{
     color: var(--first-color);
@@ -204,6 +206,7 @@ img{
 .home__title{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-5);
+    color: var(--text-color);
 }
 .home__title-color{
     color: var(--first-color);
@@ -249,6 +252,7 @@ img{
 }
 .about__subtitle{
     margin-bottom: var(--mb-2);
+    color: var(--text-color);
 }
 .about__img{
     justify-self: center;
@@ -265,9 +269,11 @@ img{
 }
 .skills__subtitle{
     margin-bottom: var(--mb-2);
+    color: var(--text-color);
 }
 .skills_text{
     margin-bottom: var(--mb-4);
+    color: var(--text-color);
 }
 .skills__data{
     display: flex;
@@ -289,6 +295,12 @@ img{
     display: flex;
     align-items: center;
 }
+.skills_name{
+    color: var(--text-color);
+}
+.skills_percentage{
+     color: var(--text-color);
+}    
 .skills__bar{
     position: absolute;
     left: 0;
@@ -372,15 +384,16 @@ img{
 .experience__container span,
 .experience__container p{
     text-align: center;
+    color: var(--text-color);
 }
 
 .course__container{
-    border-bottom: 1.5px solid var(--first-color);
+    border-bottom: 1.5px solid var(--second-color);
 }
 
 .course__container a{
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--second-color);
     display: flex;
 }
 
