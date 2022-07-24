@@ -319,6 +319,9 @@ img{
 .skills__js{
     width: 85%;
 }
+.skills__vue{
+    width: 70%;
+}
 .skills__php{
     width: 80%;
 }
