@@ -1,260 +1,334 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaique &reg;</title>
-    <link rel="icon" href="assets/img/man.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--BOX ICONS-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    <title>Portfólio - Kaique</title>
+    <!-- BOX ICONS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!--HEADER-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#home" class="nav__logo">Kaique</a>
-            </div>
+    <!-- CABEÇALHO -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Kaique</a>
+
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Conhecimento</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experiência</a></li>
-                    <li class="nav__item"><a href="#courses" class="nav__link">Cursos</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Trabalhos</a></li>
-                    <li class="nav__item"><button id="alterar-cores"><i class='bx bxs-color-fill'></i></button></li>
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link active-link">
+                            <i class="bx bx-home nav__icon"></i>Início
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#perfil" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>Perfil
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#educacao" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>Educação
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#habilidades" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>Habilidades
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experiencia" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>Experiência
+                        </a>
+                    </li>
+                    <!--li class="nav__item">
+                        <a href="#cursos" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i>Cursos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#referencias" class="nav__link">
+                            <i class="bx bx-external nav__icon"></i>Referências
+                        </a>
+                    </li-->
+                    <li class="nav__item">
+                        <a href="#hobbies" class="nav__link">
+                            <i class='bx bxs-invader nav__icon'></i>Hobbies
+                        </a>
+                    </li>
                 </ul>
             </div>
+
             <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class="bx bx-grid-alt"></i>
             </div>
         </nav>
     </header>
 
-    <main class="l-main">
-        <!-- HOME -->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Olá, <br>Seja <span class="home__title-color">Bem vindo(a).</span></h1>
-                <a href="https://api.whatsapp.com/send?phone=5511952422368&text=Olá,%20deixe sua%20mensagem, respondo assim que possível" class="button">Contato</a>
-            </div>
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/EuKaique" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                <a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank" class="home__social-icon"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/kaique_o_s/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-            </div>
-            <div class="home__img">
-                <img src="assets/img/perfil.png" alt="Perfil">
-            </div>
-        </section>
-        <!-- SOBRE MIM -->
-        <section class="about section" id="about">
-            <h2 class="section-title">Sobre mim</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/sobre.jpg" alt="Sobre mim">
-                </div>
-                <div>
-                    <h2 class="about__subtitle">Perfil</h2>
-                    <p class="about__text">Realizador: Os Realizadores demonstram grande interesse em seu trabalho, e tem contínua busca por
-                        realização pessoal. Possuem uma opinião positiva sobre o trabalho a ser realizado e tem dificuldade em delegar
-                        quando estão sob pressão. Nessas situações, o Realizador tende a assumir toda a carga de trabalho para garantir
-                        que as coisas sejam feitas da maneira certa. Quando delegam, têm a tendência de assumir novamente a tarefa
-                        caso a qualidade da entrega não esteja de acordo com suas expectativas.</p>
-                </div>
-            </div>
-        </section>
-        <!-- CONHECIMENTO -->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Conhecimento</h2>
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Nivel técnico</h2>
-                    <p class="skills__text">Abaixo um percentual de conhecimento, para cada linguagem que já trabalhei</p>
-                    <br>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML</span>
+    <main class="l-main bd-container">
+        <!-- Todos os elementos contém está div, que gera um PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!-- Início -->
+                <section class="home" id="inicio">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img class="home__img" src="assets/img/Perfil.JPG" alt="Perfil">
+
+                            <h1 class="home__title"><b>KAIQUE</b></h1>
+                            <h3 class="home__profession">Desenvolvedor web</h3>
+
+                            <!-- Botão de download do currículo salvo na pasta PDF - CELULAR -->
+                            <div>
+                                <a download="" href="assets/pdf/curriculo.pdf" class="home__button-movil">Baixar</a>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">96%</span>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i> São Paulo - SP
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i> kaiqueols75@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i> (11)95242-2368
+                            </span>
                         </div>
-                        <div class="skills__bar skills__html"></div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS</span>
-                        </div>
-                        <div>
-                            <span class="skills__percentage">90%</span>
-                        </div>
-                        <div class="skills__bar skills__css"></div>
+                    <!-- Botão que muda o tema -->
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>    
+                    <!-- Botão de download do currículo salvo na pasta PDF - DESKTOP -->
+                    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                </section>
+                
+
+
+                <!-- SOCIAL -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" target="_blank" class="social__link">
+                            <i class="bx bxl-linkedin-square social__icon"></i>@kaique_o_s
+                        </a>
+                        <a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank" class="social__link">
+                            <i class="bx bxl-facebook social__icon"></i>@kaique_o_s
+                        </a>
+                        <a href="https://www.instagram.com/kaique_o_s/" target="_blank" class="social__link">
+                            <i class="bx bxl-instagram social__icon"></i>@kaique_o_s
+                        </a>
+                        <a href="https://github.com/EuKaique" target="_blank" class="social__link">
+                            <i class="bx bxl-github social__icon"></i>@kaique_o_s
+                        </a>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JavaScript</span>
+                </section>
+                <!-- PERFIL -->
+                <section class="profile section" id="perfil">
+                    <h2 class="section-title">PERFIL</h2>
+
+                    <p class="profile__description">
+                        Realizador: Os Realizadores demonstram grande interesse em seu trabalho, e tem contínua busca por realização pessoal. Possuem uma opinião positiva sobre o trabalho a ser realizado e tem dificuldade em delegar quando estão sob pressão. Nessas situações, o Realizador tende a assumir toda a carga de trabalho para garantir que as coisas sejam feitas da maneira certa. Quando delegam, têm a tendência de assumir novamente a tarefa caso a qualidade da entrega não esteja de acordo com suas expectativas.
+                    </p>
+                </section>
+            </div>
+            <div class="resume__right">
+                <!-- EDUCAÇÃO -->
+                <section class="education section" id="educacao">
+                    <h2 class="section-title">EDUCAÇÃO</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Ciência da computação</h3>
+                                <span class="education__studies">Universidade Paulista - UNIP</span>
+                                <span class="education__year">2014 - 2017</span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Banco de dados relacional</h3>
+                                <span class="education__studies">Curso em vídeo / Youtube</span>
+                                <span class="education__year">2019 - 2020</span>
+                            </div>
                         </div>
-                        <div class="skills__bar skills__js"></div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!--span class="education__line"></span-->
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Programação WEB avançada com PHP e Laravel</h3>
+                                <span class="education__studies">Udemy</span>
+                                <span class="education__year">2021 - 2022</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-vuejs skills__icon'></i>
-                            <span class="skills__name">Vue</span>
-                        </div>
-                        <div>
-                            <span class="skills__percentage">70%</span>
-                        </div>
-                        <div class="skills__bar skills__vue"></div>
+                </section>
+                <!-- HABILIDADES -->
+                <section class="skills section" id="habilidades">
+                    <h2 class="section-title">HABILIDADES</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>HTML
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>CSS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>JS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>React JS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Node JS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Vue JS
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">    
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>PHP
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Laravel
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>CodeIgniter
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>MySQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Mongo DB
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Git
+                            </li>
+                        </ul>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-php skills__icon'></i>
-                            <span class="skills__name">PHP</span>
+                </section>
+                <!-- EXPERIÊNCIA -->
+                <section class="experience section" id="experiencia">
+                    <h2 class="section-title">EXPERIÊNCIA</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience-title">Analista de sistemas</h3>
+                                <span class="experience__company">2018 | SSI Soluções em Sistemas da Informação</span>
+                                <p class="experience__description">Trabalhei na sustentação de um banco de dados Oracle PL/SQL, realizando a tradução do banco (Português -> Inglês)</p>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                        <div class="skills__bar skills__php"></div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-data skills__icon'></i>
-                            <span class="skills__name">DataBase</span>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience-title">Analista programador JR</h3>
+                                <span class="experience__company">2021 - 2022 | Tesis tecnologia e qualidade em engenharia</span>
+                                <p class="experience__description">Trabalhei em um sistema PHP legado, realizando melhorias, correções e extrações de dados para o cliente</p>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                        <div class="skills__bar skills__database"></div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-git skills__icon'></i>
-                            <span class="skills__name">Git</span>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!--span class="experience__line"></span-->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience-title">Analista programador</h3>
+                                <span class="experience__company">Atualmente | DuoSystem Inteligência em Saúde</span>
+                                <p class="experience__description">Trabalho realizando correções e melhorias no sistema, conforme a necessidade do cliente</p>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                        <div class="skills__bar skills__git"></div>
                     </div>
-                </div>
-                <div>
-                    <img src="assets/img/work1.jpg" alt="" class="skills__img">
-                </div>
+                </section>
+
+                <!-- CURSOS -->
+                <!--section class="certificate section" id="certificates">
+                    <h2 class="section-title">CURSOS</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title"></h3>
+                        </div>
+                    </div>
+                </section-->
+
+                <!-- HOBBIES -->
+                <section class="interests section" id="hobbies">
+                    <h2 class="section-title">HOBBIES</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-headphone interest__icon'></i>
+                            <span class="interests__name">Música</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-game interest__icon'></i>
+                            <span class="interests__name">Jogos</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-dumbbell interest__icon'></i>
+                            <span class="interests__name">Treino</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-book-alt interest__icon'></i>
+                            <span class="interests__name">Livros</span>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- EXPERIÊNCIA -->
-        <section class="experience section" id="experience">
-            <h2 class="section-title">Experiência</h2>
-             <div class="experience__container bd-grid">
-                <h3>DuoSystem - Inteligência em saúde</h3>
-                <h4>Analista programador</h4>
-                <span>Atualmente</span><br>
-                <p>Trabalho realizando melhorias e correções de sistemas em PHP</p>
-            </div>
-            <div class="experience__container bd-grid">
-                <h3>Tesis - Tecnologia e Qualidade em Engenharia</h3>
-                <h4>Analista programador Jr</h4>
-                <span>Ago/2021 a Mar/2022</span><br>
-                <p>Responsabilidade de manter o sistema em funcionamento, realizando correções e melhorias conforme necessidade do cliente. Nessa experiência trabalhei com PHP, MySQL, HTML, CSS, JavaScript, Jquery e Ajax</p>
-            </div>
-            <!--div class="experience__container bd-grid">
-                <p>Responsabilidade de manter o sistema em funcionamento, realizando correções e melhorias conforme necessidade do cliente. Nessa experiência trabalhei com PHP, MySQL, HTML, CSS, JavaScript, Jquery e Ajax.</p>
-            </div>
-            <div class="experience__container bd-grid">
-                <h3>Multi portal - Software e Hardware ltda.</h3>
-                <h4>Técnico de informática</h4>
-                <span>Abr/2019 a Mai/2019</span><br>
-                <p>Foi uma experiência bem rápida, pois não tinha os requisitos técnicos para a vaga, Precisava configurar servidor, e configurar o hardware de computadores e eu não sabia como fazer. Me candidatei a vaga mais pela necessidade na época</p>
-            </div-->
-            </div>
-            <div class="experience__container bd-grid">
-                <h3>SSI Soluções em Sistemas da Informação ltda.</h3>
-                <h4>Analista de sistemas Jr</h4>
-                <span>Abr/2018 a Junho/2018</span><br>
-                <p>Foi um trabalho temporário de 2 meses, onde tinha a responsabilidade de traduzir um banco de dados (Português -> Inglês). Nessa experiência trabalhei com a ferramenta Oracle Developer PL/SQL</p>
-            </div>
-            <div class="experience__container bd-grid">
-                <h3>CIM Gestão e Informação ltda.</h3>
-                <h4>Auxiliar administrativo</h4>
-                <span>Jul/2014 a Dez/2014</span><br>
-                <p>Essa foi minha primeira experiência profissional, onde trabalhei fazendo a recepção de documentos, conferência e lançamento dos documentos no sistema</p>
-            </div>
-        </section>
-        <!-- CURSOS -->
-        <section class="courses section" id="courses">
-            <h2 class="section-title">Cursos</h2>
-            <div class="course__container bd-grid">
-                <a href="https://www.udemy.com/certificate/UC-5ee18e91-d6fc-40ea-b6d0-7451675ed86f/" target="_blank">
-                    <img src="assets/img/udemy.png" alt="Udemy" style="width:128px; height:40px;">
-                    <h3>PHP 7 Completo - Curso do desenvolvedor web</h3>
-                </a>
-            </div>
-        </section>
-        <!-- TRABALHOS -->
-        <section class="work section" id="work">
-            <h2 class="section-title">Trabalhos</h2>
-            <div class="work__container bd-grid">
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Ecommerce/" target="_blank"><img src="assets/img/trabalho01.PNG" alt="Ecommerce"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Agencia-servicos/" target="_blank"><img src="assets/img/trabalho02.PNG" alt="Agencia-servicos"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Despertador-JS/" target="_blank"><img src="assets/img/trabalho03.PNG" alt="Despertador javascript"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Calculadora-IMC-javascript/" target="_blank"><img src="assets/img/trabalho04.PNG" alt="Calculadora IMC"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Media-aluno/" target="_blank"><img src="assets/img/trabalho05.PNG" alt="Media do aluno"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://localizador-github-hk7c78yzt-eukaique.vercel.app/" target="_blank"><img src="assets/img/trabalho06.PNG" alt="Localiza Github"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Agenda-Semanal/" target="_blank"><img src="assets/img/trabalho07.PNG" alt="Agenda Semanal"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Quiz/" target="_blank"><img src="assets/img/trabalho08.PNG" alt="Quiz - Perguntas e respostas"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Calculadora-Cientifica/" target="_blank"><img src="assets/img/trabalho09.PNG" alt="Calculadora Cientifica"></a>
-                </div>
-                <div class="work__img">
-                    <a href="https://eukaique.github.io/Site-de-Empregos/" target="_blank"><img src="assets/img/trabalho10.PNG" alt="Site de emprego"></a>
-                </div>
-                <!--div class="work__img">
-                    <a href="https://eukaique.github.io/Flappy-Bird/" target="_blank"><img src="assets/img/trabalho11.PNG" alt="Flappy Bird"></a>
-                </div-->
-                </div>
-            </div>
-        </section>
-    </main>
-    <!--RODAPÉ-->
-    <footer class="footer">
-        <p class="footer__title">Kaique</p>
-        <div class="footer__social">
-            <a href="https://www.facebook.com/kaique.oliveirasantos.547/" target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/kaique_o_s/" class="footer__icon" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.linkedin.com/in/kaique-oliveira-santos-0806a6a3/" class="footer__icon"><i class='bx bxl-linkedin' target="_blank"></i></a>
         </div>
-        <p>&copy; 2022 Todos os direitos reservados</p>
-    </footer>
-    <!--SCROLL REVEAL-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--MAIN JS-->
+    </main>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+    <!-- HTML2PDF -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <!-- BOX ICONS JS -->
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <!-- JS -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
