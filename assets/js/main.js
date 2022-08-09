@@ -1,4 +1,4 @@
-import { html2pdf } from "./html2pdf.bundle.min";
+//import { html2pdf } from "./html2pdf.bundle.min";
 
 // MOSTRAR MENU
     const showMenu = (toggleId, navId) => {
@@ -81,31 +81,3 @@ import { html2pdf } from "./html2pdf.bundle.min";
         localStorage.setItem('selected-theme', getCurrentTheme())
         localStorage.setItem('selected-icon', getCurrentIcon())
     })
-
-// REDUZIR A TELA DE IMPRIMIR PARA O FORMATO A4
-    function scaleCv(){
-        document.body.classList.add('scale-cv');
-    }
-
-// REDUZIR O TAMANHO QUANDO O CV FOR BAIXADO
-    function removeScale(){
-        document.body.classList.remove('scale-cv');
-    }
-
-// GERAR O PDF
-    let areaCv       = document.getElementById('area-cv')
-    let resumeButton = document.getElementById('resume-button');
-
-    //função que chama areaCv e as opções do Html2Pdf
-    function generateResume(){
-        html2pdf(areaCv);
-    }
-    
-    //Quando  o botão for clicado, é executada essas 3 funções
-    resumeButton.addEventListener('click', () => {
-        // 1. A classe scale-cv é adicionada, ela reduz a tela para impressão
-        scaleCv();
-
-        // 2. O PDF é criado
-        generateResume();
-    });
