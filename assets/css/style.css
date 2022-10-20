@@ -179,6 +179,109 @@ body .scale-cv{
     padding: 2.255rem 0 .80rem;
 }
 
+.progresso-html{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 59%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 70%;
+}
+
+.progresso-css,
+.progresso-php{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 57%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 68%;
+}
+
+.progresso-react{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 42%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 53%;
+}
+
+.progresso-node{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 46%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 57%;
+}
+
+.progresso-vue{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 36%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 47%;
+}
+
+.progresso-php{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 52%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 64%;
+}
+
+.progresso-laravel,
+.progresso-js{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 50%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 62%;
+}
+
+.progresso-codeigniter{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 40%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 51%;
+}
+
+.progresso-git,
+.progresso-banco{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 44%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 56%;
+}
+
+.progresso-docker{
+    background-color: var(--text-color-light);
+    border-radius: 3px;
+    padding-left: 29%;
+    height: 20px;
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+    width: 40%;
+}
+
 body{
     margin: 0 0 var(--header-height) 0;
     padding: 0;
@@ -486,7 +589,7 @@ img{
 /* HOBBIES */
 .interests__container{
     grid-template-columns: repeat(3, 1fr);
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-1);
 }
 
 .interests__content{
@@ -498,7 +601,7 @@ img{
 .interest__icon{
     font-size: 1.5rem;
     color: var(--text-color-light);
-    margin-bottom: .25rem;
+    margin-bottom: .20rem;
 }
 
 /* scroll top */
